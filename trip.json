@@ -299,8 +299,9 @@
       {
         "title": "开 yifan 的车，或者租车",
         "notes": [
-          "yifan 同行：开他的车，回程他带 pp 回匹兹堡",
-          "yifan 不去：租车，PIT 取车、RDU 还车，NNez 一人开",
+          "先订一辆可免费取消的租车做备份：PIT 取车、RDU 还车",
+          "yifan 同行：开他的车，回程他带 pp 回匹兹堡；租车取消",
+          "yifan 不去：用这辆租车，NNez 一人开",
           "机场之间单程通常不收异地还车费，订车时确认"
         ],
         "status": "tbd"
@@ -402,8 +403,8 @@
   },
 
   "openQuestions": [
-    { "text": "yifan 去不去", "owner": "pp", "due": "10/4" },
-    { "text": "开谁的车", "owner": "群聊" },
+    { "text": "yifan 去不去（决定开谁的车、pp 怎么回）", "owner": "pp", "due": "10/7" },
+    { "text": "订一辆可免费取消的租车做备份：PIT 取车、RDU 还车", "owner": "nnez" },
     { "text": "周六和 Finn 在哪、几点汇合；Finn 能不能提早出发", "owner": "群聊" },
     { "text": "周日上午去哪、中午几点分开", "owner": "群聊" },
     { "text": "订住宿：Blowing Rock 两晚 + Asheville 一晚", "owner": "nnez" },
