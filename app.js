@@ -10,6 +10,7 @@ const BOOKING_GROUPS = { flights: '机票', car: '车', lodging: '住宿' };
 const SECTIONS = [
   ['people', '同行的人', renderPeople],
   ['bookings', '预订', renderBookings],
+  ['costs', '费用', renderCosts],
   ['places', '地点', renderPlaces],
   ['tips', '注意事项', renderTips],
   ['openQuestions', '待定事项', renderQuestions],
@@ -39,6 +40,7 @@ const nameOf = id => (id === 'all' ? '大家' : people[id]?.name || id);
 const linksOf = o => [...list(o.link), ...list(o.links)];
 const mapUrl = p => 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(p.mapQuery || p.name);
 const extLink = (url, cls, ...kids) => h('a', { href: url, class: cls, target: '_blank', rel: 'noopener' }, ...kids);
+const money = n => '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
 // Parse "YYYY-MM-DD" as a local date so the weekday never shifts with the timezone.
 function parseDate(iso) {
@@ -134,6 +136,42 @@ function renderBookings(groups) {
     h('h3', { class: 'group' }, BOOKING_GROUPS[key] || key),
     h('ol', { class: 'box rows' }, list(items).map(it => renderItem(it))),
   ]);
+}
+
+// Shares and balances are computed here, so changing an amount in trip.json updates every total.
+function renderCosts(costs) {
+  const share = {}, paid = {};
+  const add = (map, id, n) => { map[id] = (map[id] || 0) + n; };
+  const rows = costs.map(c => {
+    const ids = c.split === 'all' ? Object.keys(people) : list(c.split);
+    const known = typeof c.amount === 'number';
+    const each = known && ids.length > 0 ? c.amount / ids.length : null;
+    if (each != null) {
+      ids.forEach(id => add(share, id, each));
+      if (c.paidBy) add(paid, c.paidBy, c.amount);
+    }
+    const meta = [ids.length + ' 人分', each != null && '每人 ' + money(each), c.paidBy && nameOf(c.paidBy) + ' 先付'];
+    return h('li', { class: 'row ' + statusOf(c.status) },
+      h('div', { class: 'row-head' }, h('span', { class: 'amount' }, known ? money(c.amount) : '金额待定'), badge(c.status)),
+      h('h3', {}, c.title),
+      h('p', { class: 'meta' }, meta.filter(Boolean).join(' · ')),
+      notes(c.notes));
+  });
+
+  const ids = [...new Set([...Object.keys(people), ...Object.keys(share)])].filter(id => id in share);
+  const anyPaid = Object.keys(paid).length > 0;
+  return [
+    h('p', { class: 'hint' }, '按人头平摊；机票各付各的，不算在这里。'),
+    h('ol', { class: 'box rows' }, rows),
+    h('h3', { class: 'group' }, '每人合计（不含金额待定的项）'),
+    h('ul', { class: 'box rows' }, ids.map(id => {
+      const net = (paid[id] || 0) - share[id];
+      return h('li', { class: 'row' },
+        h('div', { class: 'row-head' }, h('h3', {}, nameOf(id)), h('span', { class: 'amount total' }, money(share[id]))),
+        anyPaid && h('p', { class: 'meta' },
+          (paid[id] ? `先付了 ${money(paid[id])}，` : '') + (net >= 0 ? `应收 ${money(net)}` : `应付 ${money(-net)}`)));
+    })),
+  ];
 }
 
 function renderPlaces(places) {

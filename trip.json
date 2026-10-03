@@ -24,7 +24,7 @@
       "id": "finn",
       "name": "Finn",
       "from": "Durham",
-      "summary": "Duke 学生；周六下午到 Blue Ridge，住一晚，周日玩完回 Durham；周一在 Durham 带大家逛 Duke"
+      "summary": "Duke 学生；周六下午到 Blue Ridge，和大家一起住 Rivendell 一晚，周日玩完回 Durham；周一在 Durham 带大家逛 Duke"
     },
     {
       "id": "finn-friend",
@@ -82,7 +82,7 @@
     },
     {
       "date": "2026-10-09",
-      "title": "匹兹堡 → Blowing Rock",
+      "title": "匹兹堡 → Boone",
       "items": [
         {
           "time": "10:00 ET",
@@ -108,17 +108,21 @@
         },
         {
           "time": "约 19:30 ET",
-          "title": "到 Blowing Rock，入住",
+          "title": "到 Boone，入住 Rivendell",
           "who": ["nnez", "pp"],
-          "place": { "name": "Blowing Rock, NC" },
-          "notes": ["最后一段天黑开，走 US-421 和 US-321，不走 Parkway"],
+          "place": { "name": "Boone, NC" },
+          "notes": ["最后一段天黑开，走 US-421 进 Boone，不走 Parkway", "门口是碎石小路，带手电"],
           "status": "planned"
         },
         {
-          "title": "住宿：Blowing Rock 附近两室，住周五、周六两晚",
+          "title": "住宿：Rivendell 两室（Boone 东边），住周五、周六两晚",
           "who": ["nnez", "pp"],
-          "notes": ["红叶周末容易订满", "备选 Boone（10 分钟）或 Lenoir（30 分钟）"],
-          "status": "tbd"
+          "notes": [
+            "两间卧室（queen + full），最多 6 人；周六 Finn 和同学也来住",
+            "键盘锁自助入住",
+            "地址私下发，不写在网站上"
+          ],
+          "status": "planned"
         },
         {
           "time": "傍晚",
@@ -177,10 +181,9 @@
         },
         {
           "time": "晚上",
-          "title": "住 Lenoir 的 Airbnb",
+          "title": "Finn 和同学来 Rivendell 一起住",
           "who": ["finn", "finn-friend"],
-          "place": { "name": "Lenoir, NC" },
-          "notes": ["离 Blowing Rock 30 分钟"],
+          "notes": ["Rivendell 在 Boone 东边，地址私下发", "4 个人怎么睡到时候商量：queen + full 两张床，另有沙发"],
           "status": "planned"
         }
       ]
@@ -191,16 +194,16 @@
       "items": [
         {
           "time": "上午",
+          "title": "Rivendell 退房",
+          "who": "all",
+          "status": "planned"
+        },
+        {
+          "time": "上午",
           "title": "跟 Finn 他们在 Blue Ridge 再玩半天",
           "who": "all",
           "notes": ["去哪群里定"],
           "status": "tbd"
-        },
-        {
-          "time": "上午",
-          "title": "Blowing Rock 住处退房",
-          "who": ["nnez", "pp"],
-          "status": "planned"
         },
         {
           "time": "中午",
@@ -332,9 +335,14 @@
     "lodging": [
       {
         "time": "10/9–10/11，两晚",
-        "title": "Blowing Rock 附近两室",
-        "notes": ["红叶周末容易订满；备选 Boone（10 分钟）或 Lenoir（30 分钟）"],
-        "status": "tbd"
+        "title": "Rivendell 两室（Boone 东边，Airbnb）",
+        "who": ["nnez", "pp"],
+        "notes": [
+          "两间卧室（queen + full），最多 6 人；周六 Finn 和同学也来住",
+          "两晚 $596（3 人价，含全部费用）；订的时候人数填 4，看总价变不变",
+          "停车适合小车：先问房东中型 SUV 加 Finn 他们的车能不能停下"
+        ],
+        "status": "planned"
       },
       {
         "time": "10/11，一晚",
@@ -343,6 +351,46 @@
       }
     ]
   },
+
+  "costs": [
+    {
+      "title": "租车（Enterprise 中型 SUV，4 天）",
+      "amount": 518.69,
+      "split": ["nnez", "pp"],
+      "paidBy": "nnez",
+      "status": "confirmed",
+      "notes": ["预估价，含税费，还车时付；加司机或保险会变"]
+    },
+    {
+      "title": "油费",
+      "amount": 105,
+      "split": ["nnez", "pp"],
+      "paidBy": "nnez",
+      "status": "planned",
+      "notes": ["估算：全程约 900 英里 ÷ 约 28 mpg ≈ 32 加仑 × 约 $3.3"]
+    },
+    {
+      "title": "Rivendell 周五晚",
+      "amount": 298,
+      "split": ["nnez", "pp"],
+      "paidBy": "nnez",
+      "status": "planned",
+      "notes": ["两晚 $596 按晚平分；改成 4 人后总价如果变了再更新"]
+    },
+    {
+      "title": "Rivendell 周六晚",
+      "amount": 298,
+      "split": ["nnez", "pp", "finn", "finn-friend"],
+      "paidBy": "nnez",
+      "status": "planned"
+    },
+    {
+      "title": "Asheville 住宿（周日晚）",
+      "amount": null,
+      "split": ["nnez", "pp"],
+      "status": "tbd"
+    }
+  ],
 
   "places": [
     {
@@ -421,13 +469,15 @@
     "天气": ["山上白天约 10–18°C，早晚 2–8°C，山顶风大"],
     "停车": ["热门观景点和步道停车场周末上午就满，早去"],
     "开车": ["Parkway 限速低、弯多，天黑后不要开"],
-    "费用": ["住宿、租车、油费按人头平摊，统一记账（Splitwise 链接待加）"]
+    "费用": ["住宿、租车、油费按人头平摊，明细见「费用」"]
   },
 
   "openQuestions": [
     { "text": "周六和 Finn 在哪、几点汇合；Finn 能不能提早出发", "owner": "群聊" },
     { "text": "周日上午去哪、中午几点分开", "owner": "群聊" },
-    { "text": "订住宿：Blowing Rock 两晚 + Asheville 一晚", "owner": "nnez" },
+    { "text": "订 Rivendell：10/9–10/11，人数填 4；问房东两辆车怎么停", "owner": "nnez" },
+    { "text": "Finn 他们取消 Lenoir 的 Airbnb", "owner": "finn" },
+    { "text": "订 Asheville 一晚（10/11）", "owner": "nnez" },
     { "text": "订周一 RDU → 匹兹堡的机票", "owner": "pp" }
   ],
 
