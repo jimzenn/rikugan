@@ -54,12 +54,16 @@
           "status": "confirmed"
         },
         {
-          "time": "22:35 ET 之后",
-          "title": "落地在 PIT 取车",
+          "time": "约 23:00 ET",
+          "title": "落地在 PIT 取车（Enterprise）",
           "who": ["nnez"],
           "place": { "name": "PIT", "mapQuery": "Pittsburgh International Airport" },
-          "notes": ["先确认柜台营业到 23:00 以后"],
-          "status": "planned"
+          "notes": [
+            "Enterprise 柜台在航站楼下层，行李提取处对面，营业到凌晨 1:00",
+            "航班晚点很多的话，先打电话给柜台：(844) 366-0501",
+            "开走前绕车一圈录视频：划痕、油量、里程"
+          ],
+          "status": "confirmed"
         },
         {
           "time": "深夜（取车后）",
@@ -264,7 +268,7 @@
           "title": "从 Durham 出发去 RDU",
           "who": ["nnez"],
           "place": { "name": "RDU", "mapQuery": "Raleigh-Durham International Airport" },
-          "notes": ["16:30 前在 RDU 还租车"],
+          "notes": ["16:30 前在 RDU 还车（Enterprise，1008 Rental Car Dr）"],
           "status": "planned"
         },
         {
@@ -312,11 +316,17 @@
     ],
     "car": [
       {
-        "time": "10/8 周四晚 PIT 取车 → 10/12 周一 RDU 还车",
-        "title": "租车：中型 SUV",
+        "time": "10/8 周四 23:00 PIT 取车 → 10/12 周一 16:30 RDU 还车",
+        "title": "Enterprise 中型 SUV（Nissan Rogue 或同级）",
         "who": ["nnez"],
-        "notes": ["NNez 开", "机场之间单程通常不收异地还车费，订车时确认"],
-        "status": "planned"
+        "notes": [
+          "NNez 开；要加第二司机就在取车时柜台加，另收费",
+          "不限里程，异地还车费 $0",
+          "预估 $518.69（含税费），到店付；可免费取消",
+          "取车时问清收费站怎么收费（I-77 Beckley 以南是 West Virginia Turnpike）",
+          "确认码在邮件里，不写在网站上"
+        ],
+        "status": "confirmed"
       }
     ],
     "lodging": [
@@ -415,7 +425,6 @@
   },
 
   "openQuestions": [
-    { "text": "订租车：中型 SUV，PIT 取车、RDU 还车（单程）", "owner": "nnez" },
     { "text": "周六和 Finn 在哪、几点汇合；Finn 能不能提早出发", "owner": "群聊" },
     { "text": "周日上午去哪、中午几点分开", "owner": "群聊" },
     { "text": "订住宿：Blowing Rock 两晚 + Asheville 一晚", "owner": "nnez" },
