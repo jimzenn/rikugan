@@ -41,15 +41,17 @@
       "items": [
         {
           "time": "13:05 PT",
-          "title": "SFO 起飞：Southwest WN 3257",
+          "title": "NNez 的航班：SFO → PIT",
           "who": ["nnez"],
           "place": { "name": "SFO", "mapQuery": "San Francisco International Airport" },
           "notes": [
-            "经 St. Louis (STL) 转机约 1 小时 05 分，换 WN 4917",
-            "22:35 ET 到 PIT",
-            "约 $535"
+            "WN 3257：13:05 PT 从 SFO 起飞，18:50 CT 到 St. Louis (STL)",
+            "STL 转机 1 小时 05 分",
+            "WN 4917：19:55 CT 从 STL 起飞，22:35 ET 到 PIT",
+            "Basic 票，总价 $384.20（含税费）",
+            "确认码在 Southwest App 和邮件里，不写在网站上"
           ],
-          "status": "planned"
+          "status": "confirmed"
         },
         {
           "time": "22:35 ET 之后",
@@ -259,11 +261,11 @@
         },
         {
           "time": "18:15 ET",
-          "title": "RDU 起飞：Southwest WN 3562",
+          "title": "NNez 的航班：RDU → SFO",
           "who": ["nnez"],
           "place": { "name": "RDU", "mapQuery": "Raleigh-Durham International Airport" },
           "notes": [
-            "经 Denver (DEN) 转机约 1 小时 30 分，换 WN 2036",
+            "Southwest WN 3562，经 Denver (DEN) 转机约 1 小时 30 分，换 WN 2036",
             "23:15 PT 到 SFO",
             "约 $315"
           ],
@@ -282,14 +284,18 @@
     "flights": [
       {
         "time": "10/8 周四 13:05 PT → 22:35 ET",
-        "title": "SFO → PIT：Southwest WN 3257 + WN 4917",
+        "title": "NNez 的航班：SFO → PIT（Southwest WN 3257 + WN 4917）",
         "who": ["nnez"],
-        "notes": ["经 St. Louis (STL) 转机约 1 小时 05 分", "约 $535"],
-        "status": "planned"
+        "notes": [
+          "经 St. Louis (STL) 转机 1 小时 05 分：18:50 CT 到，19:55 CT 起飞",
+          "Basic 票，总价 $384.20（含税费）",
+          "确认码在 Southwest App 和邮件里，不写在网站上"
+        ],
+        "status": "confirmed"
       },
       {
         "time": "10/12 周一 18:15 ET → 23:15 PT",
-        "title": "RDU → SFO：Southwest WN 3562 + WN 2036",
+        "title": "NNez 的航班：RDU → SFO（Southwest WN 3562 + WN 2036）",
         "who": ["nnez"],
         "notes": ["经 Denver (DEN) 转机约 1 小时 30 分", "约 $315"],
         "status": "planned"
