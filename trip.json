@@ -81,14 +81,14 @@
         {
           "time": "约 08:00 ET",
           "title": "从匹兹堡出发",
-          "who": "all",
+          "who": ["nnez", "pp"],
           "notes": ["全程约 7 小时，经 West Virginia"],
           "status": "planned"
         },
         {
           "time": "中午",
           "title": "New River Gorge National Park：看大桥、吃午饭",
-          "who": "all",
+          "who": ["nnez", "pp"],
           "place": { "name": "New River Gorge National Park", "mapQuery": "Canyon Rim Visitor Center, Fayetteville, WV" },
           "notes": ["停 1 到 2 小时", "就在路线上，几乎不用绕路", "当作司机的强制休息"],
           "status": "planned"
@@ -96,7 +96,7 @@
         {
           "time": "傍晚",
           "title": "到 Blowing Rock，入住",
-          "who": "all",
+          "who": ["nnez", "pp"],
           "place": { "name": "Blowing Rock, NC" },
           "status": "planned"
         },
