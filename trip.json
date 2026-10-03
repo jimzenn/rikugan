@@ -18,7 +18,7 @@
       "id": "pp",
       "name": "pp",
       "from": "匹兹堡",
-      "summary": "匹兹堡出发，全程同行；回匹兹堡的方式待定"
+      "summary": "匹兹堡出发，全程同行；周一从 RDU 飞回匹兹堡"
     },
     {
       "id": "finn",
@@ -55,11 +55,11 @@
         },
         {
           "time": "22:35 ET 之后",
-          "title": "落地后在 PIT 取租车",
+          "title": "落地在 PIT 取车",
           "who": ["nnez"],
           "place": { "name": "PIT", "mapQuery": "Pittsburgh International Airport" },
-          "notes": ["先确认那家公司的柜台营业到 23:00 以后，否则改周五早上取"],
-          "status": "tbd"
+          "notes": ["先确认柜台营业到 23:00 以后"],
+          "status": "planned"
         },
         {
           "time": "深夜（取车后）",
@@ -67,10 +67,10 @@
           "who": ["nnez", "pp"],
           "notes": [
             "NNez 在 PIT 取完车直接开过去",
-            "如果今晚取不到车：打车或请 pp 来接，周五早上先回 PIT 取车再出发",
+            "如果今晚取不到车：打车或请 pp 来接，周五一早先去 PIT 取车，再赶 10:00 的预约",
             "充气床垫已经借好",
             "地址私下发，不写在网站上",
-            "周五约 08:00 从这里出发"
+            "周五早上从这里出发，先去 pp 10:00 的预约"
           ],
           "status": "confirmed"
         }
@@ -81,25 +81,33 @@
       "title": "匹兹堡 → Blowing Rock",
       "items": [
         {
-          "time": "约 08:00 ET",
-          "title": "从匹兹堡出发",
+          "time": "10:00 ET",
+          "title": "pp 有个 SSN 办理预约，NNez 开车送她",
           "who": ["nnez", "pp"],
-          "notes": ["全程约 7 小时，经 West Virginia"],
+          "notes": ["在 pp 家往北约 30 分钟，办完直接从那里出发，不回家"],
+          "status": "confirmed"
+        },
+        {
+          "time": "约 11:00 ET",
+          "title": "从匹兹堡出发，全程约 7.5 小时",
+          "who": ["nnez", "pp"],
+          "notes": ["如果 11:30 还没走，就跳过 New River Gorge"],
           "status": "planned"
         },
         {
-          "time": "中午",
-          "title": "New River Gorge National Park：看大桥、吃午饭",
+          "time": "下午",
+          "title": "可选：New River Gorge 停 15 分钟看大桥",
           "who": ["nnez", "pp"],
           "place": { "name": "New River Gorge National Park", "mapQuery": "Canyon Rim Visitor Center, Fayetteville, WV" },
-          "notes": ["停 1 到 2 小时", "就在路线上，几乎不用绕路", "当作司机的强制休息"],
-          "status": "planned"
+          "notes": ["就在路线上，几乎不用绕路", "如果 11:30 还没从匹兹堡出发，就跳过"],
+          "status": "tbd"
         },
         {
-          "time": "傍晚",
+          "time": "约 19:30 ET",
           "title": "到 Blowing Rock，入住",
           "who": ["nnez", "pp"],
           "place": { "name": "Blowing Rock, NC" },
+          "notes": ["最后一段天黑开，走 US-421 和 US-321，不走 Parkway"],
           "status": "planned"
         },
         {
@@ -272,8 +280,9 @@
           "status": "planned"
         },
         {
-          "title": "从 RDU 飞回匹兹堡，或其他安排",
+          "title": "从 RDU 飞回匹兹堡",
           "who": ["pp"],
+          "notes": ["机票待订"],
           "status": "tbd"
         }
       ]
@@ -303,14 +312,10 @@
     ],
     "car": [
       {
-        "time": "10/8 周四晚 PIT 取车 → 10/12 周一 16:30 前 RDU 还车",
-        "title": "租车：PIT → RDU 单程",
+        "time": "10/8 周四晚 PIT 取车 → 10/12 周一 RDU 还车",
+        "title": "租车：中型 SUV",
         "who": ["nnez"],
-        "notes": [
-          "NNez 一人开",
-          "机场之间单程通常不收异地还车费，订车时确认",
-          "PIT 柜台要营业到 23:00 以后，否则改周五早上取"
-        ],
+        "notes": ["NNez 开", "机场之间单程通常不收异地还车费，订车时确认"],
         "status": "planned"
       }
     ],
@@ -333,7 +338,7 @@
     {
       "name": "New River Gorge Bridge / Canyon Rim Visitor Center",
       "mapQuery": "Canyon Rim Visitor Center, Fayetteville, WV",
-      "notes": ["周五午饭停这里，就在路线上"]
+      "notes": ["周五可选停 15 分钟看大桥，就在路线上"]
     },
     {
       "name": "Rough Ridge Trail",
@@ -410,11 +415,11 @@
   },
 
   "openQuestions": [
-    { "text": "订租车：PIT 取车、RDU 还车（单程）", "owner": "nnez" },
+    { "text": "订租车：中型 SUV，PIT 取车、RDU 还车（单程）", "owner": "nnez" },
     { "text": "周六和 Finn 在哪、几点汇合；Finn 能不能提早出发", "owner": "群聊" },
     { "text": "周日上午去哪、中午几点分开", "owner": "群聊" },
     { "text": "订住宿：Blowing Rock 两晚 + Asheville 一晚", "owner": "nnez" },
-    { "text": "pp 怎么回匹兹堡", "owner": "pp" }
+    { "text": "订周一 RDU → 匹兹堡的机票", "owner": "pp" }
   ],
 
   "packing": [
