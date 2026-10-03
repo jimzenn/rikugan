@@ -140,18 +140,6 @@
           "status": "planned"
         },
         {
-          "time": "上午（可选）",
-          "title": "Grandfather Mountain",
-          "who": ["nnez", "pp"],
-          "place": { "name": "Grandfather Mountain", "mapQuery": "Grandfather Mountain, Linville, NC" },
-          "notes": [
-            "必须网上预约入场时段，十月周末会卖光，票买了不退",
-            "园区 9:00–18:00，步道 17:00 关"
-          ],
-          "links": [{ "label": "买票", "url": "https://grandfather.com/tickets/" }],
-          "status": "tbd"
-        },
-        {
           "time": "上午",
           "title": "在 Durham 逛 Duke，午饭后出发",
           "who": ["finn", "finn-friend"],
@@ -350,13 +338,6 @@
       "notes": ["Blue Ridge Parkway MP 304.4", "游客中心目前关闭，步道和停车场正常"]
     },
     {
-      "name": "Grandfather Mountain",
-      "mapQuery": "Grandfather Mountain, Linville, NC",
-      "hours": "09:00–18:00，步道 17:00 关",
-      "notes": ["必须网上预约入场时段，十月周末会卖光，票买了不退"],
-      "link": { "label": "门票", "url": "https://grandfather.com/tickets/" }
-    },
-    {
       "name": "Moses H. Cone Memorial Park",
       "mapQuery": "Moses H. Cone Memorial Park, Blowing Rock, NC",
       "notes": ["Blue Ridge Parkway MP 294"]
@@ -425,7 +406,6 @@
     { "text": "开谁的车", "owner": "群聊" },
     { "text": "周六和 Finn 在哪、几点汇合；Finn 能不能提早出发", "owner": "群聊" },
     { "text": "周日上午去哪、中午几点分开", "owner": "群聊" },
-    { "text": "Grandfather Mountain 去不去，去就马上买票", "owner": "nnez" },
     { "text": "订住宿：Blowing Rock 两晚 + Asheville 一晚", "owner": "nnez" },
     { "text": "pp 怎么回匹兹堡", "owner": "pp" }
   ],
@@ -441,7 +421,6 @@
 
   "links": [
     { "label": "Blue Ridge Parkway 路况", "url": "https://www.nps.gov/blri/planyourvisit/roadclosures.htm" },
-    { "label": "Grandfather Mountain 门票", "url": "https://grandfather.com/tickets/" },
     { "label": "Nasher Museum 开放时间", "url": "https://nasher.duke.edu/hours-admission/" },
     { "label": "Asheville 开放情况", "url": "https://www.exploreasheville.com/" }
   ]

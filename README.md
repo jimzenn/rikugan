@@ -110,11 +110,11 @@
 
 ```json
 {
-  "name": "Grandfather Mountain",
-  "mapQuery": "Grandfather Mountain, Linville, NC",
-  "hours": "09:00–18:00，步道 17:00 关",
-  "notes": ["必须网上预约入场时段"],
-  "link": { "label": "门票", "url": "https://grandfather.com/tickets/" }
+  "name": "Nasher Museum of Art",
+  "mapQuery": "Nasher Museum of Art, Durham, NC",
+  "hours": "周一闭馆",
+  "notes": ["在 Duke 校园里"],
+  "link": { "label": "开放时间", "url": "https://nasher.duke.edu/hours-admission/" }
 }
 ```
 
