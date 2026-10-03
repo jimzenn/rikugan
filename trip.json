@@ -48,7 +48,7 @@
             "WN 3257：13:05 PT 从 SFO 起飞，18:50 CT 到 St. Louis (STL)",
             "STL 转机 1 小时 05 分",
             "WN 4917：19:55 CT 从 STL 起飞，22:35 ET 到 PIT",
-            "Basic 票，总价 $384.20（含税费）",
+            "Basic 票，总价 $384.20（含税费）；座位值机时才分配，周三 13:05 PT 一到就值机",
             "确认码在 Southwest App 和邮件里，不写在网站上"
           ],
           "status": "confirmed"
@@ -286,11 +286,13 @@
           "who": ["nnez"],
           "place": { "name": "RDU", "mapQuery": "Raleigh-Durham International Airport" },
           "notes": [
-            "Southwest WN 3562，经 Denver (DEN) 转机约 1 小时 30 分，换 WN 2036",
-            "23:15 PT 到 SFO",
-            "约 $315"
+            "WN 3562：18:15 ET 从 RDU 起飞，20:05 MT 到 Denver (DEN)",
+            "DEN 转机 1 小时 30 分",
+            "WN 2036：21:35 MT 从 DEN 起飞，23:15 PT 到 SFO",
+            "Basic 票，票价 $268.84（不含税费）；座位值机时才分配，周日 18:15 ET 一到就值机",
+            "确认码在 Southwest App 和邮件里，不写在网站上"
           ],
-          "status": "planned"
+          "status": "confirmed"
         },
         {
           "title": "从 RDU 飞回匹兹堡",
@@ -319,8 +321,12 @@
         "time": "10/12 周一 18:15 ET → 23:15 PT",
         "title": "NNez 的航班：RDU → SFO（Southwest WN 3562 + WN 2036）",
         "who": ["nnez"],
-        "notes": ["经 Denver (DEN) 转机约 1 小时 30 分", "约 $315"],
-        "status": "planned"
+        "notes": [
+          "经 Denver (DEN) 转机 1 小时 30 分：20:05 MT 到，21:35 MT 起飞",
+          "Basic 票，票价 $268.84（不含税费）",
+          "确认码在 Southwest App 和邮件里，不写在网站上"
+        ],
+        "status": "confirmed"
       }
     ],
     "car": [
