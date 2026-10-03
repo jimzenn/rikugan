@@ -21,12 +21,6 @@
       "summary": "匹兹堡出发，全程同行；回匹兹堡的方式待定"
     },
     {
-      "id": "yifan",
-      "name": "yifan",
-      "from": "匹兹堡",
-      "summary": "是否同行待定；如果去，开他的车"
-    },
-    {
       "id": "finn",
       "name": "Finn",
       "from": "Durham",
@@ -59,7 +53,7 @@
         },
         {
           "time": "22:35 ET 之后",
-          "title": "如果租车：落地就在 PIT 取车",
+          "title": "落地后在 PIT 取租车",
           "who": ["nnez"],
           "place": { "name": "PIT", "mapQuery": "Pittsburgh International Airport" },
           "notes": ["先确认那家公司的柜台营业到 23:00 以后，否则改周五早上取"],
@@ -254,7 +248,7 @@
           "title": "从 Durham 出发去 RDU",
           "who": ["nnez"],
           "place": { "name": "RDU", "mapQuery": "Raleigh-Durham International Airport" },
-          "notes": ["如果租车，16:30 前还车"],
+          "notes": ["16:30 前在 RDU 还租车"],
           "status": "planned"
         },
         {
@@ -297,14 +291,15 @@
     ],
     "car": [
       {
-        "title": "开 yifan 的车，或者租车",
+        "time": "10/8 周四晚 PIT 取车 → 10/12 周一 16:30 前 RDU 还车",
+        "title": "租车：PIT → RDU 单程",
+        "who": ["nnez"],
         "notes": [
-          "先订一辆可免费取消的租车做备份：PIT 取车、RDU 还车",
-          "yifan 同行：开他的车，回程他带 pp 回匹兹堡；租车取消",
-          "yifan 不去：用这辆租车，NNez 一人开",
-          "机场之间单程通常不收异地还车费，订车时确认"
+          "NNez 一人开",
+          "机场之间单程通常不收异地还车费，订车时确认",
+          "PIT 柜台要营业到 23:00 以后，否则改周五早上取"
         ],
-        "status": "tbd"
+        "status": "planned"
       }
     ],
     "lodging": [
@@ -403,8 +398,7 @@
   },
 
   "openQuestions": [
-    { "text": "yifan 去不去（决定开谁的车、pp 怎么回）", "owner": "pp", "due": "10/7" },
-    { "text": "订一辆可免费取消的租车做备份：PIT 取车、RDU 还车", "owner": "nnez" },
+    { "text": "订租车：PIT 取车、RDU 还车（单程）", "owner": "nnez" },
     { "text": "周六和 Finn 在哪、几点汇合；Finn 能不能提早出发", "owner": "群聊" },
     { "text": "周日上午去哪、中午几点分开", "owner": "群聊" },
     { "text": "订住宿：Blowing Rock 两晚 + Asheville 一晚", "owner": "nnez" },
