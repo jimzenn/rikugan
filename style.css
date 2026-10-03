@@ -1,0 +1,246 @@
+:root {
+  color-scheme: light dark;
+  --bg: #f5f2ec;
+  --card: #fffdf9;
+  --text: #1f1c18;
+  --muted: #6b6459;
+  --line: #e4ded3;
+  --accent: #b3261e;
+  --on-accent: #fff;
+  --accent-soft: #f8e1dd;
+  --ok: #166534;
+  --ok-bg: #d9f5e1;
+  --plan: #1e40af;
+  --plan-bg: #dde8fd;
+  --tbd: #1f1400;
+  --tbd-bg: #f5a524;
+  --tbd-soft: #fff4d6;
+  --radius: 14px;
+  --chips-h: 68px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15130f;
+    --card: #1f1c17;
+    --text: #ece6dc;
+    --muted: #a59c8e;
+    --line: #36312a;
+    --accent: #ff8f84;
+    --on-accent: #2a0b08;
+    --accent-soft: #3d1d19;
+    --ok: #8ae5a6;
+    --ok-bg: #173b24;
+    --plan: #a8c5ff;
+    --plan-bg: #1c2d55;
+    --tbd-bg: #f5b43a;
+    --tbd-soft: #2f2611;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-padding-top: calc(var(--chips-h) + 8px);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
+    "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+  overflow-wrap: anywhere;
+}
+
+a { color: var(--accent); }
+h1, h2, h3, p { margin: 0; }
+
+.wrap { max-width: 640px; margin: 0 auto; padding: 0 16px; }
+
+/* ---- header ---- */
+
+#top { padding-top: 28px; padding-bottom: 16px; }
+h1 { font-size: 26px; line-height: 1.3; }
+.subtitle { margin-top: 4px; color: var(--muted); }
+.meta { margin-top: 6px; font-size: 14px; color: var(--muted); }
+
+.offline-tag {
+  display: none;
+  margin-left: 8px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: var(--muted);
+  color: var(--bg);
+  font-size: 12px;
+}
+.offline .offline-tag { display: inline-block; }
+
+.legend { margin-top: 14px; padding: 10px 14px; display: grid; gap: 6px; font-size: 14px; }
+.legend div { display: flex; align-items: center; gap: 10px; }
+.legend .badge { min-width: 4.5em; text-align: center; }
+.legend .count { margin-left: auto; color: var(--muted); white-space: nowrap; }
+
+/* ---- sticky chips ---- */
+
+.chips {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  gap: 8px;
+  min-height: var(--chips-h);
+  padding: 10px max(16px, calc((100% - 608px) / 2));
+  overflow-x: auto;
+  scrollbar-width: none;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+.chips::-webkit-scrollbar { display: none; }
+
+.chip {
+  position: relative;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 58px;
+  min-height: 48px;
+  padding: 2px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--card);
+  color: var(--text);
+  font-weight: 600;
+  line-height: 1.25;
+  text-decoration: none;
+}
+.chip small { font-size: 12px; font-weight: 400; color: var(--muted); }
+.chip.today { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.chip.today small { color: inherit; }
+.chip.has-tbd::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--tbd-bg);
+}
+.chip.sec { font-size: 14px; font-weight: 500; }
+.chip-sep { flex: none; width: 1px; margin: 6px 2px; background: var(--line); }
+
+/* ---- boxes and rows (days, bookings, sections) ---- */
+
+main { padding-bottom: 24px; }
+
+.box {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.rows { list-style: none; margin: 0; padding: 0; }
+.row { padding: 12px 16px 14px; border-left: 4px solid transparent; }
+.row + .row { border-top: 1px solid var(--line); }
+.row.tbd { background: var(--tbd-soft); border-left-color: var(--tbd-bg); }
+.row h3 { font-size: 17px; line-height: 1.45; }
+.row > p { margin-top: 4px; }
+
+.row-head { display: flex; align-items: center; gap: 8px; margin-bottom: 2px; }
+.time { font-size: 14px; font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.badge {
+  flex: none;
+  padding: 1px 9px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+.row-head .badge { margin-left: auto; }
+.badge.confirmed { color: var(--ok); background: var(--ok-bg); }
+.badge.planned { color: var(--plan); background: var(--plan-bg); }
+.badge.tbd { color: var(--tbd); background: var(--tbd-bg); }
+.badge.tbd::before { content: "! "; }
+
+.who { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.pill {
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.notes { margin: 6px 0 0; padding-left: 1.2em; list-style: disc; font-size: 15px; }
+.notes li + li { margin-top: 2px; }
+.notes li::marker { color: var(--muted); }
+
+.btns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  text-decoration: none;
+}
+.place::before { content: "📍"; margin-right: 4px; }
+.ext::after { content: " ↗"; }
+
+/* ---- days ---- */
+
+.day { margin: 16px 0; }
+.day.today { border: 2px solid var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+.day-head { padding: 14px 16px 12px; border-bottom: 1px solid var(--line); }
+.day-date { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); }
+.day h2 { margin-top: 2px; font-size: 21px; line-height: 1.35; }
+.today-tag {
+  padding: 0 8px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* ---- sections after the days ---- */
+
+.section { margin: 36px 0; }
+.section > h2 { margin-bottom: 12px; font-size: 21px; }
+.group { margin: 18px 0 8px; font-size: 15px; color: var(--muted); }
+.section > .group:first-of-type { margin-top: 0; }
+.from { margin-left: 8px; font-size: 14px; font-weight: 400; color: var(--muted); }
+.hours { font-size: 15px; }
+.row .meta { margin-top: 4px; }
+.hint { margin: -6px 0 10px; font-size: 14px; color: var(--muted); }
+
+.row h3 > .place,
+.row > .ext { display: block; font-weight: 600; text-decoration: none; }
+.row > .ext { padding: 4px 0; }
+
+.packing label { display: flex; align-items: center; gap: 12px; min-height: 32px; }
+.packing input { flex: none; width: 22px; height: 22px; margin: 0; accent-color: var(--accent); }
+.packing input:checked + span { color: var(--muted); text-decoration: line-through; }
+
+/* ---- misc ---- */
+
+.loading, .notice { margin: 24px 0; }
+.notice {
+  padding: 12px 16px;
+  border-left: 4px solid var(--accent);
+  border-radius: 10px;
+  background: var(--accent-soft);
+}
+.foot { padding-bottom: 40px; font-size: 13px; color: var(--muted); }

@@ -1,0 +1,428 @@
+{
+  "trip": {
+    "title": "北卡秋叶之旅",
+    "subtitle": "匹兹堡 → Blue Ridge Parkway → Asheville → Durham",
+    "startDate": "2026-10-08",
+    "endDate": "2026-10-12",
+    "lastUpdated": "2026-10-03"
+  },
+
+  "people": [
+    {
+      "id": "nnez",
+      "name": "NNez",
+      "from": "旧金山",
+      "summary": "周四飞到匹兹堡，周一从 RDU 飞回；全程主要司机"
+    },
+    {
+      "id": "pp",
+      "name": "pp",
+      "from": "匹兹堡",
+      "summary": "匹兹堡出发，全程同行；回匹兹堡的方式待定"
+    },
+    {
+      "id": "yifan",
+      "name": "yifan",
+      "from": "匹兹堡",
+      "summary": "是否同行待定；如果去，开他的车"
+    },
+    {
+      "id": "finn",
+      "name": "Finn",
+      "from": "Durham",
+      "summary": "Duke 学生；周六下午到 Blue Ridge，住一晚，周日玩完回 Durham；周一在 Durham 带大家逛 Duke"
+    },
+    {
+      "id": "finn-friend",
+      "name": "Finn 的同学",
+      "from": "波士顿",
+      "summary": "周五傍晚落地 RDU；周六周日跟 Finn 同行；周一一早从 RDU 飞回波士顿"
+    }
+  ],
+
+  "days": [
+    {
+      "date": "2026-10-08",
+      "title": "飞匹兹堡",
+      "items": [
+        {
+          "time": "13:05 PT",
+          "title": "SFO 起飞：Southwest WN 3257",
+          "who": ["nnez"],
+          "place": { "name": "SFO", "mapQuery": "San Francisco International Airport" },
+          "notes": [
+            "经 St. Louis (STL) 转机约 1 小时 05 分，换 WN 4917",
+            "22:35 ET 到 PIT",
+            "约 $535"
+          ],
+          "status": "planned"
+        },
+        {
+          "time": "22:35 ET 之后",
+          "title": "如果租车：落地就在 PIT 取车",
+          "who": ["nnez"],
+          "place": { "name": "PIT", "mapQuery": "Pittsburgh International Airport" },
+          "notes": ["先确认那家公司的柜台营业到 23:00 以后，否则改周五早上取"],
+          "status": "tbd"
+        },
+        {
+          "time": "晚上",
+          "title": "住 pp 家",
+          "who": ["nnez", "pp"],
+          "notes": ["借了充气床垫"],
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "title": "匹兹堡 → Blowing Rock",
+      "items": [
+        {
+          "time": "约 08:00 ET",
+          "title": "从匹兹堡出发",
+          "who": "all",
+          "notes": ["全程约 7 小时，经 West Virginia"],
+          "status": "planned"
+        },
+        {
+          "time": "中午",
+          "title": "New River Gorge National Park：看大桥、吃午饭",
+          "who": "all",
+          "place": { "name": "New River Gorge National Park", "mapQuery": "Canyon Rim Visitor Center, Fayetteville, WV" },
+          "notes": ["停 1 到 2 小时", "就在路线上，几乎不用绕路", "当作司机的强制休息"],
+          "status": "planned"
+        },
+        {
+          "time": "傍晚",
+          "title": "到 Blowing Rock，入住",
+          "who": "all",
+          "place": { "name": "Blowing Rock, NC" },
+          "status": "planned"
+        },
+        {
+          "title": "住宿：Blowing Rock 附近两室，住周五、周六两晚",
+          "who": ["nnez", "pp"],
+          "notes": ["红叶周末容易订满", "备选 Boone（10 分钟）或 Lenoir（30 分钟）"],
+          "status": "tbd"
+        },
+        {
+          "time": "傍晚",
+          "title": "落地 RDU",
+          "who": ["finn-friend"],
+          "place": { "name": "RDU", "mapQuery": "Raleigh-Durham International Airport" },
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "title": "Blue Ridge Parkway",
+      "items": [
+        {
+          "time": "早上 9 点前",
+          "title": "Rough Ridge 步道",
+          "who": ["nnez", "pp"],
+          "place": { "name": "Rough Ridge Trail", "mapQuery": "Rough Ridge Trail, Blue Ridge Parkway, NC" },
+          "notes": [
+            "Blue Ridge Parkway MP 302.8",
+            "停车场很小，十月周末 9 点后基本停不进",
+            "能看到 Linn Cove Viaduct"
+          ],
+          "status": "planned"
+        },
+        {
+          "time": "上午",
+          "title": "Linn Cove Viaduct",
+          "who": ["nnez", "pp"],
+          "place": { "name": "Linn Cove Viaduct", "mapQuery": "Linn Cove Viaduct, Blue Ridge Parkway, NC" },
+          "notes": ["Blue Ridge Parkway MP 304.4", "游客中心目前关闭，步道和停车场正常"],
+          "status": "planned"
+        },
+        {
+          "time": "上午",
+          "title": "在 Durham 逛 Duke，午饭后出发",
+          "who": ["finn", "finn-friend"],
+          "notes": ["可能提早出发"],
+          "status": "tbd"
+        },
+        {
+          "time": "下午",
+          "title": "跟 Finn 他们汇合",
+          "who": "all",
+          "place": [
+            { "name": "Moses H. Cone Memorial Park", "mapQuery": "Moses H. Cone Memorial Park, Blowing Rock, NC" },
+            { "name": "Price Lake", "mapQuery": "Price Lake, Blue Ridge Parkway, NC" },
+            { "name": "The Blowing Rock", "mapQuery": "The Blowing Rock, Blowing Rock, NC" }
+          ],
+          "notes": [
+            "时间地点待定",
+            "候选：Moses H. Cone Memorial Park（MP 294）、Price Lake（MP 297）、The Blowing Rock"
+          ],
+          "status": "tbd"
+        },
+        {
+          "time": "晚上",
+          "title": "住 Lenoir 的 Airbnb",
+          "who": ["finn", "finn-friend"],
+          "place": { "name": "Lenoir, NC" },
+          "notes": ["离 Blowing Rock 30 分钟"],
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "title": "Blue Ridge 上午 → Asheville",
+      "items": [
+        {
+          "time": "上午",
+          "title": "跟 Finn 他们在 Blue Ridge 再玩半天",
+          "who": "all",
+          "notes": ["去哪群里定"],
+          "status": "tbd"
+        },
+        {
+          "time": "上午",
+          "title": "Blowing Rock 住处退房",
+          "who": ["nnez", "pp"],
+          "status": "planned"
+        },
+        {
+          "time": "中午",
+          "title": "跟 Finn 他们分开，开车去 Asheville",
+          "who": ["nnez", "pp"],
+          "place": { "name": "Asheville, NC" },
+          "notes": ["约 2 小时", "走 US-221 和 I-40，不走 Parkway：Blowing Rock 往南有路段封闭"],
+          "links": [{ "label": "Parkway 路况", "url": "https://www.nps.gov/blri/planyourvisit/roadclosures.htm" }],
+          "status": "planned"
+        },
+        {
+          "time": "下午和晚上",
+          "title": "Asheville 市中心、River Arts District 上半区",
+          "who": ["nnez", "pp"],
+          "place": [
+            { "name": "Downtown Asheville", "mapQuery": "Pack Square Park, Asheville, NC" },
+            { "name": "River Arts District", "mapQuery": "River Arts District, Asheville, NC" }
+          ],
+          "links": [{ "label": "Asheville 开放情况", "url": "https://www.exploreasheville.com/" }],
+          "status": "planned"
+        },
+        {
+          "title": "住宿：Asheville 一晚",
+          "who": ["nnez", "pp"],
+          "status": "tbd"
+        },
+        {
+          "title": "回 Durham",
+          "who": ["finn", "finn-friend"],
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Asheville → Durham → 飞走",
+      "items": [
+        {
+          "time": "一早",
+          "title": "从 RDU 飞回波士顿",
+          "who": ["finn-friend"],
+          "place": { "name": "RDU", "mapQuery": "Raleigh-Durham International Airport" },
+          "status": "planned"
+        },
+        {
+          "time": "约 08:00 ET",
+          "title": "从 Asheville 出发去 Durham",
+          "who": ["nnez", "pp"],
+          "notes": ["I-40 东行约 3.5 小时"],
+          "status": "planned"
+        },
+        {
+          "time": "约 11:30 ET",
+          "title": "Finn 带着逛 Duke",
+          "who": ["nnez", "pp", "finn"],
+          "place": [
+            { "name": "Sarah P. Duke Gardens", "mapQuery": "Sarah P. Duke Gardens, Durham, NC" },
+            { "name": "Duke Chapel", "mapQuery": "Duke Chapel, Durham, NC" }
+          ],
+          "notes": ["重点 Sarah P. Duke Gardens 和 Duke Chapel", "Nasher Museum 周一闭馆"],
+          "status": "planned"
+        },
+        {
+          "time": "15:45 ET",
+          "title": "从 Durham 出发去 RDU",
+          "who": ["nnez"],
+          "place": { "name": "RDU", "mapQuery": "Raleigh-Durham International Airport" },
+          "notes": ["如果租车，16:30 前还车"],
+          "status": "planned"
+        },
+        {
+          "time": "18:15 ET",
+          "title": "RDU 起飞：Southwest WN 3562",
+          "who": ["nnez"],
+          "place": { "name": "RDU", "mapQuery": "Raleigh-Durham International Airport" },
+          "notes": [
+            "经 Denver (DEN) 转机约 1 小时 30 分，换 WN 2036",
+            "23:15 PT 到 SFO",
+            "约 $315"
+          ],
+          "status": "planned"
+        },
+        {
+          "title": "从 RDU 飞回匹兹堡，或其他安排",
+          "who": ["pp"],
+          "status": "tbd"
+        }
+      ]
+    }
+  ],
+
+  "bookings": {
+    "flights": [
+      {
+        "time": "10/8 周四 13:05 PT → 22:35 ET",
+        "title": "SFO → PIT：Southwest WN 3257 + WN 4917",
+        "who": ["nnez"],
+        "notes": ["经 St. Louis (STL) 转机约 1 小时 05 分", "约 $535"],
+        "status": "planned"
+      },
+      {
+        "time": "10/12 周一 18:15 ET → 23:15 PT",
+        "title": "RDU → SFO：Southwest WN 3562 + WN 2036",
+        "who": ["nnez"],
+        "notes": ["经 Denver (DEN) 转机约 1 小时 30 分", "约 $315"],
+        "status": "planned"
+      }
+    ],
+    "car": [
+      {
+        "title": "开 yifan 的车，或者租车",
+        "notes": [
+          "先订一辆可免费取消的租车做备份：PIT 取车、RDU 还车",
+          "yifan 同行：开他的车，回程他带 pp 回匹兹堡；租车取消",
+          "yifan 不去：用这辆租车，NNez 一人开",
+          "机场之间单程通常不收异地还车费，订车时确认"
+        ],
+        "status": "tbd"
+      }
+    ],
+    "lodging": [
+      {
+        "time": "10/9–10/11，两晚",
+        "title": "Blowing Rock 附近两室",
+        "notes": ["红叶周末容易订满；备选 Boone（10 分钟）或 Lenoir（30 分钟）"],
+        "status": "tbd"
+      },
+      {
+        "time": "10/11，一晚",
+        "title": "Asheville",
+        "status": "tbd"
+      }
+    ]
+  },
+
+  "places": [
+    {
+      "name": "New River Gorge Bridge / Canyon Rim Visitor Center",
+      "mapQuery": "Canyon Rim Visitor Center, Fayetteville, WV",
+      "notes": ["周五午饭停这里，就在路线上"]
+    },
+    {
+      "name": "Rough Ridge Trail",
+      "mapQuery": "Rough Ridge Trail, Blue Ridge Parkway, NC",
+      "notes": ["Blue Ridge Parkway MP 302.8", "停车场很小，十月周末 9 点前到"]
+    },
+    {
+      "name": "Linn Cove Viaduct",
+      "mapQuery": "Linn Cove Viaduct, Blue Ridge Parkway, NC",
+      "notes": ["Blue Ridge Parkway MP 304.4", "游客中心目前关闭，步道和停车场正常"]
+    },
+    {
+      "name": "Moses H. Cone Memorial Park",
+      "mapQuery": "Moses H. Cone Memorial Park, Blowing Rock, NC",
+      "notes": ["Blue Ridge Parkway MP 294"]
+    },
+    {
+      "name": "Price Lake",
+      "mapQuery": "Price Lake, Blue Ridge Parkway, NC",
+      "notes": ["Blue Ridge Parkway MP 297"]
+    },
+    {
+      "name": "The Blowing Rock",
+      "mapQuery": "The Blowing Rock, Blowing Rock, NC"
+    },
+    {
+      "name": "Downtown Asheville",
+      "mapQuery": "Pack Square Park, Asheville, NC",
+      "notes": ["Pack Square 一带"]
+    },
+    {
+      "name": "River Arts District",
+      "mapQuery": "River Arts District, Asheville, NC",
+      "notes": ["上半区（Upper RAD）已全面重开，靠河的下半区部分恢复"]
+    },
+    {
+      "name": "Biltmore Estate",
+      "mapQuery": "Biltmore Estate, Asheville, NC",
+      "notes": ["可选：门票贵、要半天，去的话提前买票"]
+    },
+    {
+      "name": "Duke Chapel",
+      "mapQuery": "Duke Chapel, Durham, NC"
+    },
+    {
+      "name": "Sarah P. Duke Gardens",
+      "mapQuery": "Sarah P. Duke Gardens, Durham, NC"
+    },
+    {
+      "name": "Nasher Museum of Art",
+      "mapQuery": "Nasher Museum of Art, Durham, NC",
+      "hours": "周一闭馆",
+      "link": { "label": "开放时间", "url": "https://nasher.duke.edu/hours-admission/" }
+    }
+  ],
+
+  "tips": {
+    "路况": [
+      "Blowing Rock 到 Linn Cove 这段 Parkway 开放，但有施工，偶尔单车道封闭，会有短暂等待",
+      "出发前看 NPS 路况页"
+    ],
+    "信号": [
+      "Parkway 上很多地方没信号",
+      "出发前下载 Google Maps 离线地图：Blue Ridge Parkway 一带、Asheville、Durham"
+    ],
+    "红叶": [
+      "今年天气偏暖，峰值推迟",
+      "Blowing Rock 镇上（约 3500 英尺）那个周末可能还没红透，5000 英尺以上的高处接近峰值，所以往高处开"
+    ],
+    "天气": ["山上白天约 10–18°C，早晚 2–8°C，山顶风大"],
+    "停车": ["热门观景点和步道停车场周末上午就满，早去"],
+    "开车": ["Parkway 限速低、弯多，天黑后不要开"],
+    "费用": ["住宿、租车、油费按人头平摊，统一记账（Splitwise 链接待加）"]
+  },
+
+  "openQuestions": [
+    { "text": "yifan 去不去（决定开谁的车、pp 怎么回）", "owner": "pp", "due": "10/7" },
+    { "text": "订一辆可免费取消的租车做备份：PIT 取车、RDU 还车", "owner": "nnez" },
+    { "text": "周六和 Finn 在哪、几点汇合；Finn 能不能提早出发", "owner": "群聊" },
+    { "text": "周日上午去哪、中午几点分开", "owner": "群聊" },
+    { "text": "订住宿：Blowing Rock 两晚 + Asheville 一晚", "owner": "nnez" },
+    { "text": "pp 怎么回匹兹堡", "owner": "pp" }
+  ],
+
+  "packing": [
+    "防风外套、雨衣、保暖中间层",
+    "能走山路的鞋",
+    "防晒",
+    "充电宝、车载充电线",
+    "驾照",
+    "离线地图（出发前下好）"
+  ],
+
+  "links": [
+    { "label": "Blue Ridge Parkway 路况", "url": "https://www.nps.gov/blri/planyourvisit/roadclosures.htm" },
+    { "label": "Nasher Museum 开放时间", "url": "https://nasher.duke.edu/hours-admission/" },
+    { "label": "Asheville 开放情况", "url": "https://www.exploreasheville.com/" }
+  ]
+}
