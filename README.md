@@ -134,7 +134,7 @@
 ### `openQuestions`：待定事项
 
 ```json
-{ "text": "yifan 去不去", "owner": "pp", "due": "10/4" }
+{ "text": "pp 怎么回匹兹堡", "owner": "pp", "due": "10/6" }
 ```
 
 `owner` 写人的 `id` 会显示成名字，也可以直接写 `"群聊"`。`due` 随便写。问题解决了就把这一项删掉。
