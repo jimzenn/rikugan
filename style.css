@@ -152,6 +152,8 @@ main { padding-bottom: 24px; }
 .row > p { margin-top: 4px; }
 
 .row-head { display: flex; align-items: center; gap: 8px; margin-bottom: 2px; }
+.amount { font-size: 17px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.amount.total { margin-left: auto; }
 .time { font-size: 14px; font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; }
 
 .badge {
@@ -220,7 +222,7 @@ main { padding-bottom: 24px; }
 .section { margin: 36px 0; }
 .section > h2 { margin-bottom: 12px; font-size: 21px; }
 .group { margin: 18px 0 8px; font-size: 15px; color: var(--muted); }
-.section > .group:first-of-type { margin-top: 0; }
+.section > h2 + .group { margin-top: 0; }
 .from { margin-left: 8px; font-size: 14px; font-weight: 400; color: var(--muted); }
 .hours { font-size: 15px; }
 .row .meta { margin-top: 4px; }
