@@ -21,16 +21,27 @@
       "summary": "匹兹堡出发，全程同行；周一从 RDU 飞回匹兹堡"
     },
     {
+      "id": "photic",
+      "name": "photic.",
+      "from": "Charlotte",
+      "summary": "周五傍晚坐巴士到 Boone 加入，之后跟 NNez、pp 一起走；周一怎么回去待定"
+    },
+    {
       "id": "finn",
       "name": "Finn",
       "from": "Durham",
-      "summary": "Duke 学生；周六下午到 Blue Ridge，和大家一起住 Rivendell 一晚，周日玩完回 Durham；周一在 Durham 带大家逛 Duke"
+      "summary": "Duke 学生；周六下午到 Blue Ridge，和同学、朋友另住一间 Airbnb，周日玩完回 Durham；周一在 Durham 带大家逛 Duke"
     },
     {
       "id": "finn-friend",
       "name": "Finn 的同学",
       "from": "波士顿",
       "summary": "周五傍晚落地 RDU；周六周日跟 Finn 同行；周一一早从 RDU 飞回波士顿"
+    },
+    {
+      "id": "finn-pal",
+      "name": "Finn 的朋友",
+      "summary": "跟 Finn 和同学一起行动，住他们订的地方"
     }
   ],
 
@@ -107,6 +118,18 @@
           "status": "tbd"
         },
         {
+          "time": "约 18:00 ET",
+          "title": "photic. 坐巴士到 Boone",
+          "who": ["photic"],
+          "place": { "name": "Boone, NC" },
+          "notes": [
+            "从 Charlotte 坐巴士过来，先去 Rivendell 入住，顺路买点菜",
+            "从车站打车约 10–15 分钟，或者在 Boone 主街等 NNez 他们顺路接",
+            "Rivendell 只有小厨房：微波炉、空气炸锅、小冰箱，没有灶"
+          ],
+          "status": "confirmed"
+        },
+        {
           "time": "约 19:30 ET",
           "title": "到 Boone，入住 Rivendell",
           "who": ["nnez", "pp"],
@@ -116,9 +139,9 @@
         },
         {
           "title": "住宿：Rivendell 两室（Boone 东边），住周五、周六两晚",
-          "who": ["nnez", "pp"],
+          "who": ["nnez", "pp", "photic"],
           "notes": [
-            "两间卧室（queen + full），最多 6 人；周六 Finn 和同学也来住",
+            "两间卧室（queen + full），沙发备用；住 NNez、pp、photic. 三人",
             "16:00 后入住，键盘锁自助，门锁密码看 Airbnb 消息",
             "地址私下发，不写在网站上"
           ],
@@ -140,7 +163,7 @@
         {
           "time": "早上 9 点前",
           "title": "Rough Ridge 步道",
-          "who": ["nnez", "pp"],
+          "who": ["nnez", "pp", "photic"],
           "place": { "name": "Rough Ridge Trail", "mapQuery": "Rough Ridge Trail, Blue Ridge Parkway, NC" },
           "notes": [
             "Blue Ridge Parkway MP 302.8",
@@ -152,7 +175,7 @@
         {
           "time": "上午",
           "title": "Linn Cove Viaduct",
-          "who": ["nnez", "pp"],
+          "who": ["nnez", "pp", "photic"],
           "place": { "name": "Linn Cove Viaduct", "mapQuery": "Linn Cove Viaduct, Blue Ridge Parkway, NC" },
           "notes": ["Blue Ridge Parkway MP 304.4", "游客中心目前关闭，步道和停车场正常"],
           "status": "planned"
@@ -160,7 +183,7 @@
         {
           "time": "上午",
           "title": "在 Durham 逛 Duke，午饭后出发",
-          "who": ["finn", "finn-friend"],
+          "who": ["finn", "finn-friend", "finn-pal"],
           "notes": ["可能提早出发"],
           "status": "tbd"
         },
@@ -181,10 +204,10 @@
         },
         {
           "time": "晚上",
-          "title": "Finn 和同学来 Rivendell 一起住",
-          "who": ["finn", "finn-friend"],
-          "notes": ["Rivendell 在 Boone 东边，地址私下发", "4 个人怎么睡到时候商量：queen + full 两张床，另有沙发", "入住须知见「注意事项」"],
-          "status": "confirmed"
+          "title": "Finn 他们另住一间 Airbnb",
+          "who": ["finn", "finn-friend", "finn-pal"],
+          "notes": ["Finn 来订，最好在 Boone 或 Blowing Rock 附近，周日上午一起玩方便", "红叶季周六很难订，越早越好"],
+          "status": "tbd"
         }
       ]
     },
@@ -195,7 +218,7 @@
         {
           "time": "11:00 前",
           "title": "Rivendell 退房",
-          "who": "all",
+          "who": ["nnez", "pp", "photic"],
           "status": "planned"
         },
         {
@@ -208,7 +231,7 @@
         {
           "time": "中午",
           "title": "跟 Finn 他们分开，开车去 Asheville",
-          "who": ["nnez", "pp"],
+          "who": ["nnez", "pp", "photic"],
           "place": { "name": "Asheville, NC" },
           "notes": ["约 2 小时", "走 US-221 和 I-40，不走 Parkway：Blowing Rock 往南有路段封闭"],
           "links": [{ "label": "Parkway 路况", "url": "https://www.nps.gov/blri/planyourvisit/roadclosures.htm" }],
@@ -217,7 +240,7 @@
         {
           "time": "下午和晚上",
           "title": "Asheville 市中心、River Arts District 上半区",
-          "who": ["nnez", "pp"],
+          "who": ["nnez", "pp", "photic"],
           "place": [
             { "name": "Downtown Asheville", "mapQuery": "Pack Square Park, Asheville, NC" },
             { "name": "River Arts District", "mapQuery": "River Arts District, Asheville, NC" }
@@ -227,7 +250,7 @@
         },
         {
           "title": "住宿：The Residences at Biltmore（Asheville，两卧公寓）",
-          "who": ["nnez", "pp"],
+          "who": ["nnez", "pp", "photic"],
           "place": { "name": "The Residences at Biltmore", "mapQuery": "The Residences at Biltmore, Asheville, NC" },
           "notes": [
             "公寓式酒店：先去前台登记，要出示证件",
@@ -238,7 +261,7 @@
         },
         {
           "title": "回 Durham",
-          "who": ["finn", "finn-friend"],
+          "who": ["finn", "finn-friend", "finn-pal"],
           "status": "planned"
         }
       ]
@@ -257,14 +280,14 @@
         {
           "time": "约 08:00 ET",
           "title": "从 Asheville 出发去 Durham",
-          "who": ["nnez", "pp"],
+          "who": ["nnez", "pp", "photic"],
           "notes": ["I-40 东行约 3.5 小时"],
           "status": "planned"
         },
         {
           "time": "约 11:30 ET",
           "title": "Finn 带着逛 Duke",
-          "who": ["nnez", "pp", "finn"],
+          "who": ["nnez", "pp", "photic", "finn"],
           "place": [
             { "name": "Sarah P. Duke Gardens", "mapQuery": "Sarah P. Duke Gardens, Durham, NC" },
             { "name": "Duke Chapel", "mapQuery": "Duke Chapel, Durham, NC" }
@@ -293,6 +316,13 @@
             "确认码在 Southwest App 和邮件里，不写在网站上"
           ],
           "status": "confirmed"
+        },
+        {
+          "time": "下午",
+          "title": "photic. 怎么回去",
+          "who": ["photic"],
+          "notes": ["待定；如果回 Charlotte，Durham 有 Amtrak 火车，约 3 小时，可以去 RDU 前送她到 Durham 火车站"],
+          "status": "tbd"
         },
         {
           "title": "从 RDU 飞回匹兹堡",
@@ -348,9 +378,9 @@
       {
         "time": "10/9–10/11，两晚",
         "title": "Rivendell 两室（Boone 东边，Airbnb）",
-        "who": ["nnez", "pp", "finn", "finn-friend"],
+        "who": ["nnez", "pp", "photic"],
         "notes": [
-          "4 人，两晚 $671.99（含税），已付，不可退款",
+          "订单 4 人，实际住 NNez、pp、photic. 三人；两晚 $671.99（含税），已付，不可退款",
           "16:00 后入住，11:00 前退房，键盘锁自助入住",
           "入住须知见「注意事项」",
           "确认码在 Airbnb 里，不写在网站上"
@@ -360,9 +390,10 @@
       {
         "time": "10/11，一晚",
         "title": "The Residences at Biltmore（Asheville，两卧公寓，Airbnb）",
-        "who": ["nnez", "pp"],
+        "who": ["nnez", "pp", "photic"],
         "notes": [
-          "2 人，$233.91（含税），已付；10/10 前可免费取消",
+          "订单是 2 人，photic. 加入要改成 3 人（10/10 前改，可能加价）",
+          "$233.91（含税），已付；10/10 前可免费取消",
           "保证 16:00 入住，先到前台登记、出示证件",
           "确认码在 Airbnb 里，不写在网站上"
         ],
@@ -375,7 +406,6 @@
     {
       "title": "租车（Enterprise 中型 SUV，4 天）",
       "amount": 518.69,
-      "split": ["nnez", "pp"],
       "paidBy": "nnez",
       "status": "confirmed",
       "notes": ["预估价，含税费，还车时付；加司机或保险会变"]
@@ -383,33 +413,23 @@
     {
       "title": "油费",
       "amount": 105,
-      "split": ["nnez", "pp"],
       "paidBy": "nnez",
       "status": "planned",
       "notes": ["估算：全程约 900 英里 ÷ 约 28 mpg ≈ 32 加仑 × 约 $3.3"]
     },
     {
-      "title": "Rivendell 周五晚",
-      "amount": 336,
-      "split": ["nnez", "pp"],
+      "title": "Rivendell（周五、周六两晚）",
+      "amount": 671.99,
       "paidBy": "nnez",
       "status": "confirmed",
-      "notes": ["两晚 $671.99（含税）按晚平分"]
-    },
-    {
-      "title": "Rivendell 周六晚",
-      "amount": 335.99,
-      "split": ["nnez", "pp", "finn", "finn-friend"],
-      "paidBy": "nnez",
-      "status": "confirmed"
+      "notes": ["含税"]
     },
     {
       "title": "Asheville 住宿（周日晚）",
       "amount": 233.91,
-      "split": ["nnez", "pp"],
       "paidBy": "nnez",
       "status": "confirmed",
-      "notes": ["The Residences at Biltmore，含税"]
+      "notes": ["The Residences at Biltmore，含税；改成 3 人后可能加价"]
     }
   ],
 
@@ -490,7 +510,7 @@
     "天气": ["山上白天约 10–18°C，早晚 2–8°C，山顶风大"],
     "停车": ["热门观景点和步道停车场周末上午就满，早去"],
     "开车": ["Parkway 限速低、弯多，天黑后不要开"],
-    "费用": ["住宿、租车、油费按人头平摊，明细见「费用」"],
+    "费用": ["住宿、租车、油费按人头平摊；photic. 加入后怎么分还在商量，定了再更新"],
     "Rivendell 入住须知": [
       "16:00 后入住，11:00 前退房",
       "不要上室内楼梯，那里是房东的住处",
@@ -501,7 +521,12 @@
 
   "openQuestions": [
     { "text": "周六和 Finn 在哪、几点汇合；Finn 能不能提早出发", "owner": "群聊" },
-    { "text": "周日上午去哪、中午几点分开", "owner": "群聊" }
+    { "text": "周日上午去哪、中午几点分开", "owner": "群聊" },
+    { "text": "Finn 他们订周六一晚的 Airbnb（3 人）", "owner": "finn" },
+    { "text": "把 Rivendell 地址和门锁密码转给 photic.，跟房东说她会先到", "owner": "nnez" },
+    { "text": "Asheville 订单改成 3 人（10/10 前）", "owner": "nnez" },
+    { "text": "photic. 周一怎么回去", "owner": "photic" },
+    { "text": "photic. 加入后费用怎么分", "owner": "群聊" }
   ],
 
   "packing": [

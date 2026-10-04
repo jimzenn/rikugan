@@ -150,7 +150,7 @@ function renderCosts(costs) {
       ids.forEach(id => add(share, id, each));
       if (c.paidBy) add(paid, c.paidBy, c.amount);
     }
-    const meta = [ids.length + ' 人分', each != null && '每人 ' + money(each), c.paidBy && nameOf(c.paidBy) + ' 先付'];
+    const meta = [ids.length ? ids.length + ' 人分' : '分法待定', each != null && '每人 ' + money(each), c.paidBy && nameOf(c.paidBy) + ' 先付'];
     return h('li', { class: 'row ' + statusOf(c.status) },
       h('div', { class: 'row-head' }, h('span', { class: 'amount' }, known ? money(c.amount) : '金额待定'), badge(c.status)),
       h('h3', {}, c.title),
@@ -163,8 +163,8 @@ function renderCosts(costs) {
   return [
     h('p', { class: 'hint' }, '按人头平摊；机票各付各的，不算在这里。'),
     h('ol', { class: 'box rows' }, rows),
-    h('h3', { class: 'group' }, '每人合计（不含金额待定的项）'),
-    h('ul', { class: 'box rows' }, ids.map(id => {
+    ids.length > 0 && h('h3', { class: 'group' }, '每人合计（不含金额或分法待定的项）'),
+    ids.length > 0 && h('ul', { class: 'box rows' }, ids.map(id => {
       const net = (paid[id] || 0) - share[id];
       return h('li', { class: 'row' },
         h('div', { class: 'row-head' }, h('h3', {}, nameOf(id)), h('span', { class: 'amount total' }, money(share[id]))),
