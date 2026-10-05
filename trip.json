@@ -23,8 +23,8 @@
     {
       "id": "photic",
       "name": "photic.",
-      "from": "Charlotte",
-      "summary": "周五傍晚坐巴士到 Boone 加入，之后跟 NNez、pp 一起走；周一怎么回去待定"
+      "from": "Durham",
+      "summary": "住 Durham；周五自己去 Charlotte 坐巴士到 Boone 加入，之后跟 NNez、pp 一起走，周一一起开回 Durham"
     },
     {
       "id": "finn",
@@ -318,11 +318,11 @@
           "status": "confirmed"
         },
         {
-          "time": "下午",
-          "title": "photic. 怎么回去",
+          "time": "15:45 ET 前",
+          "title": "photic. 在 Durham 到家",
           "who": ["photic"],
-          "notes": ["待定；如果回 Charlotte，Durham 有 Amtrak 火车，约 3 小时，可以去 RDU 前送她到 Durham 火车站"],
-          "status": "tbd"
+          "notes": ["她住 Durham，跟大家一起开回来就到家，不用另外安排回程"],
+          "status": "planned"
         },
         {
           "title": "从 RDU 飞回匹兹堡",
@@ -525,7 +525,6 @@
     { "text": "Finn 他们订周六一晚的 Airbnb（3 人）", "owner": "finn" },
     { "text": "把 Rivendell 地址和门锁密码转给 photic.，跟房东说她会先到", "owner": "nnez" },
     { "text": "Asheville 订单改成 3 人（10/10 前）", "owner": "nnez" },
-    { "text": "photic. 周一怎么回去", "owner": "photic" },
     { "text": "photic. 加入后费用怎么分", "owner": "群聊" }
   ],
 
