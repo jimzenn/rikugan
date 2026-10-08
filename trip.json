@@ -4,7 +4,7 @@
     "subtitle": "匹兹堡 → Blue Ridge Parkway → Asheville → Durham",
     "startDate": "2026-10-08",
     "endDate": "2026-10-12",
-    "lastUpdated": "2026-10-03"
+    "lastUpdated": "2026-10-08"
   },
 
   "people": [
@@ -49,6 +49,9 @@
     {
       "date": "2026-10-08",
       "title": "飞匹兹堡",
+      "summary": "NNez 下午飞匹兹堡，深夜取车，开到 pp 家睡觉。",
+      "bring": ["驾照（REAL ID）", "本人名下信用卡（取车押金）", "充电宝放随身行李"],
+      "notes": ["没有托运行李，11:45 前到 SFO 就够", "取车时问能不能换 AWD（四驱）：Rivendell 房东建议，周六周日下雨"],
       "items": [
         {
           "time": "13:05 PT",
@@ -59,33 +62,34 @@
             "WN 3257：13:05 PT 从 SFO 起飞，18:50 CT 到 St. Louis (STL)",
             "STL 转机 1 小时 05 分",
             "WN 4917：19:55 CT 从 STL 起飞，22:35 ET 到 PIT",
-            "Basic 票，总价 $384.20（含税费）；座位值机时才分配，周三 13:05 PT 一到就值机",
+            "Basic 票，总价 $384.20（含税费）；座位值机时才分配",
             "确认码在 Southwest App 和邮件里，不写在网站上"
           ],
           "status": "confirmed"
         },
         {
-          "time": "约 23:00 ET",
+          "time": "22:35–23:15 ET",
           "title": "落地在 PIT 取车（Enterprise）",
           "who": ["nnez"],
           "place": { "name": "PIT", "mapQuery": "Pittsburgh International Airport" },
           "notes": [
             "Enterprise 柜台在航站楼下层，行李提取处对面，营业到凌晨 1:00",
-            "航班晚点很多的话，先打电话给柜台：(844) 366-0501",
+            "问柜台要 AWD 的车：订的这一档不保证四驱，有车才给；Subaru 都是四驱，其他车看车尾 AWD 标",
+            "航班晚点很多的话，先打电话给 PIT 的 Enterprise 柜台（号码在确认邮件里）",
             "开走前绕车一圈录视频：划痕、油量、里程"
           ],
           "status": "confirmed"
         },
+        { "type": "drive", "time": "23:15–23:45", "title": "开到 pp 家（约 30 分钟）", "who": ["nnez"] },
         {
-          "time": "深夜（取车后）",
-          "title": "开到 pp 家过夜（匹兹堡）",
+          "time": "约 23:45 ET",
+          "title": "到 pp 家过夜（匹兹堡）",
           "who": ["nnez", "pp"],
           "notes": [
-            "NNez 在 PIT 取完车直接开过去",
             "如果今晚取不到车：打车或请 pp 来接，周五一早先去 PIT 取车，再赶 10:00 的预约",
             "充气床垫已经借好",
             "地址私下发，不写在网站上",
-            "周五早上从这里出发，先去 pp 10:00 的预约"
+            "周五 9:20 从这里出发，行李提前装车，不再回来"
           ],
           "status": "confirmed"
         }
@@ -94,28 +98,63 @@
     {
       "date": "2026-10-09",
       "title": "匹兹堡 → Boone",
+      "summary": "开车日：路上约 7.5 小时，加上停留，约 19:30 到 Boone。天气晴，Boone 最高 22°C，夜里 11°C；日落约 19:00。",
+      "bring": ["所有行李（办完预约直接出发）", "路上的水和零食", "墨镜"],
+      "notes": [
+        "11:30 前没出发就跳过 New River Gorge",
+        "I-77 在 West Virginia 有收费站，取车时问清 Enterprise 怎么收费",
+        "最后一段天黑，走 US-421 进 Boone，不走 Parkway"
+      ],
       "items": [
         {
-          "time": "10:00 ET",
+          "time": "09:20 出发 · 10:00 到",
           "title": "开车前往 pp 预约",
           "who": ["nnez", "pp"],
-          "notes": ["在 pp 家往北约 30 分钟，办完直接从那里出发，不回家"],
+          "notes": ["在 pp 家往北约 30 分钟", "行李提前全部装车，办完直接从那里出发，不回家"],
           "status": "confirmed"
         },
         {
-          "time": "约 11:00 ET",
-          "title": "从预约地点直接出发，全程约 7.5 小时",
+          "type": "drive",
+          "time": "约 11:00–13:30",
+          "title": "出发往南（约 2.5 小时）",
           "who": ["nnez", "pp"],
-          "notes": ["如果 11:30 还没走，就跳过 New River Gorge"],
+          "notes": ["按导航走，大致是 I-79 南 → US-19 南 → I-77 南 → 进北卡后走 US-421 到 Boone", "如果 11:30 还没走，就跳过 New River Gorge"]
+        },
+        {
+          "time": "约 13:30–14:00",
+          "title": "午饭 + 加油",
+          "who": ["nnez", "pp"],
+          "notes": ["I-79 上 Weston 一带出口，快餐和加油站都有", "NNez 一个人开全程，趁这时候歇一下"],
           "status": "planned"
         },
         {
-          "time": "下午",
-          "title": "可选：New River Gorge 停 15 分钟看大桥",
+          "type": "drive",
+          "time": "约 14:00–15:30",
+          "title": "开到 New River Gorge（约 1.5 小时）",
+          "who": ["nnez", "pp"],
+          "notes": ["I-79 在 Sutton 出口转 US-19 南"]
+        },
+        {
+          "time": "约 15:30–15:50",
+          "title": "可选：New River Gorge 停 15–20 分钟看大桥",
           "who": ["nnez", "pp"],
           "place": { "name": "New River Gorge National Park", "mapQuery": "Canyon Rim Visitor Center, Fayetteville, WV" },
-          "notes": ["就在路线上，几乎不用绕路", "如果 11:30 还没从匹兹堡出发，就跳过"],
+          "notes": [
+            "Canyon Rim Visitor Center 9:00–17:00；步道天黑前都能走",
+            "上层观景台走几步就到；下层视野最好，但要走 178 级台阶，往返约 30 分钟",
+            "如果 11:30 还没从匹兹堡出发，就跳过"
+          ],
           "status": "tbd"
+        },
+        {
+          "type": "drive",
+          "time": "约 15:50–19:30",
+          "title": "开往 Boone（约 3 小时 40 分）",
+          "who": ["nnez", "pp"],
+          "notes": [
+            "US-19 南到 Beckley 上 I-77 南；Beckley 以南有 West Virginia Turnpike 收费站",
+            "日落约 19:00，最后一段 US-421 上山是天黑开，慢一点"
+          ]
         },
         {
           "time": "约 18:00 ET",
@@ -130,77 +169,155 @@
           "status": "confirmed"
         },
         {
-          "time": "约 19:30 ET",
-          "title": "到 Boone，入住 Rivendell",
-          "who": ["nnez", "pp"],
-          "place": { "name": "Boone, NC" },
-          "notes": ["最后一段天黑开，走 US-421 进 Boone，不走 Parkway", "门口是碎石小路，带手电"],
-          "status": "planned"
-        },
-        {
-          "title": "住宿：Rivendell 两室（Boone 东边），住周五、周六两晚",
-          "who": ["nnez", "pp", "photic"],
-          "notes": [
-            "两间卧室（queen + full），沙发备用；住 NNez、pp、photic. 三人",
-            "16:00 后入住，键盘锁自助，门锁密码看 Airbnb 消息",
-            "地址私下发，不写在网站上"
-          ],
-          "status": "confirmed"
-        },
-        {
           "time": "傍晚",
           "title": "落地 RDU",
           "who": ["finn-friend"],
           "place": { "name": "RDU", "mapQuery": "Raleigh-Durham International Airport" },
           "status": "planned"
+        },
+        {
+          "time": "约 19:30 ET",
+          "title": "到 Boone，入住 Rivendell",
+          "who": ["nnez", "pp"],
+          "place": { "name": "Boone, NC" },
+          "notes": ["门口是碎石小路，带手电", "房东建议用 AWD；不是四驱的话坡上慢开，或者问房东停哪"],
+          "status": "planned"
+        },
+        {
+          "time": "约 20:00",
+          "title": "晚饭：在住处简单吃",
+          "who": ["nnez", "pp", "photic"],
+          "notes": ["吃 photic. 顺路买的菜；小厨房只有微波炉、空气炸锅、小冰箱，没有灶", "想出去吃就早点决定，小镇餐厅关门早"],
+          "status": "planned"
+        },
+        {
+          "title": "住宿：Rivendell 两室（Boone 东边），住周五、周六两晚",
+          "who": ["nnez", "pp", "photic"],
+          "notes": ["两间卧室（queen + full），沙发备用；住 NNez、pp、photic. 三人", "16:00 后入住，键盘锁自助，门锁密码看 Airbnb 消息", "地址私下发，不写在网站上"],
+          "status": "confirmed"
         }
       ]
     },
     {
       "date": "2026-10-10",
       "title": "Blue Ridge Parkway",
+      "summary": "天气：上午可能有阵雨，下午之后大概率下雨，阵风约 40 km/h；Boone 最高约 16°C，山上更冷。日出 7:30，日落 18:57。早上 7:30 看天再定走方案 A 还是 B。",
+      "bring": ["雨衣 / 防风外套", "抓绒或毛衣", "防滑运动鞋 + 备用袜子", "帽子", "水和零食", "装湿衣服的塑料袋"],
+      "notes": [
+        "7:30 没下雨：方案 A（Rough Ridge + Linn Cove）；在下雨：方案 B（室内为主）",
+        "Parkway 这一段开放，但有临时单车道施工，可能要等几分钟",
+        "晚饭 6 个人，周六晚上餐厅人多，提前订位"
+      ],
       "items": [
+        { "time": "07:30", "title": "看天气，定方案 A 还是 B", "who": ["nnez", "pp", "photic"], "status": "planned" },
         {
-          "time": "早上 9 点前",
-          "title": "Rough Ridge 步道",
+          "type": "drive",
+          "time": "A · 07:50–08:30",
+          "title": "开到 Rough Ridge 停车场（约 40 分钟）",
+          "who": ["nnez", "pp", "photic"],
+          "notes": ["经 Boone、Blowing Rock 上 Parkway，往南到 MP 302.8", "停车场很小，十月周末 9 点后基本停不进"]
+        },
+        {
+          "time": "A · 08:30–09:30",
+          "title": "Rough Ridge 步道（建议只走到木栈道）",
           "who": ["nnez", "pp", "photic"],
           "place": { "name": "Rough Ridge Trail", "mapQuery": "Rough Ridge Trail, Blue Ridge Parkway, NC" },
           "notes": [
-            "Blue Ridge Parkway MP 302.8",
-            "停车场很小，十月周末 9 点后基本停不进",
+            "往返约 2 km，爬升约 150 米（约 50 层楼），30–60 分钟",
+            "开头就陡、石头多、常有泥；约 500 米处是木栈道，风景最好",
+            "山顶最后一段要扶钢缆爬石头，下雨、风大时别上",
             "能看到 Linn Cove Viaduct"
+          ],
+          "bring": ["防滑鞋", "外套", "帽子"],
+          "status": "planned"
+        },
+        {
+          "time": "A · 09:40–10:20",
+          "title": "Linn Cove Viaduct",
+          "who": ["nnez", "pp", "photic"],
+          "place": { "name": "Linn Cove Viaduct", "mapQuery": "Linn Cove Viaduct, Blue Ridge Parkway, NC" },
+          "notes": ["MP 304.4，Rough Ridge 再往南约 3 km", "游客中心关闭，停车场和步道开放", "从停车场沿小路走几分钟，就到高架桥下面"],
+          "status": "planned"
+        },
+        {
+          "type": "drive",
+          "time": "A · 10:20–10:50",
+          "title": "开回 Blowing Rock（约 30 分钟）",
+          "who": ["nnez", "pp", "photic"]
+        },
+        {
+          "time": "B · 10:00–11:00",
+          "title": "方案 B（下雨）：Moses H. Cone 庄园",
+          "who": ["nnez", "pp", "photic"],
+          "place": { "name": "Moses H. Cone Memorial Park", "mapQuery": "Moses H. Cone Memorial Park, Blowing Rock, NC" },
+          "notes": [
+            "不用早起；约 9:40 从 Rivendell 出发，开约 20 分钟",
+            "Flat Top Manor 里的 Parkway Craft Center：每天 10:00–17:00，免费，看手工艺",
+            "雨小的时候可以绕 Bass Lake 走一圈，平路"
           ],
           "status": "planned"
         },
         {
-          "time": "上午",
-          "title": "Linn Cove Viaduct",
+          "time": "11:00–12:30",
+          "title": "午饭：Blowing Rock 小镇",
           "who": ["nnez", "pp", "photic"],
-          "place": { "name": "Linn Cove Viaduct", "mapQuery": "Linn Cove Viaduct, Blue Ridge Parkway, NC" },
-          "notes": ["Blue Ridge Parkway MP 304.4", "游客中心目前关闭，步道和停车场正常"],
+          "place": { "name": "Blowing Rock, NC", "mapQuery": "Main Street, Blowing Rock, NC" },
+          "notes": ["Main Street 上餐厅和咖啡店集中，饭后在附近逛街"],
+          "status": "planned"
+        },
+        {
+          "time": "12:30–16:00",
+          "title": "自由活动",
+          "who": ["nnez", "pp", "photic"],
+          "place": {
+            "name": "Blowing Rock Art & History Museum",
+            "mapQuery": "Blowing Rock Art & History Museum, Blowing Rock, NC"
+          },
+          "notes": [
+            "下雨：Blowing Rock Art & History Museum（周六 11:00–17:00，免费），或者回 Rivendell 歇一会儿（约 20 分钟车程）",
+            "不下雨：Bass Lake 环湖（平路，约 1.5 km），或者 The Blowing Rock 观景点"
+          ],
           "status": "planned"
         },
         {
           "time": "上午",
           "title": "在 Durham 逛 Duke，午饭后出发",
           "who": ["finn", "finn-friend", "finn-pal"],
-          "notes": ["可能提早出发"],
+          "notes": ["约 13:00 从 Durham 出发，开 3 小时左右"],
           "status": "tbd"
         },
         {
-          "time": "下午",
+          "time": "约 16:00",
           "title": "跟 Finn 他们汇合",
           "who": "all",
           "place": [
-            { "name": "Moses H. Cone Memorial Park", "mapQuery": "Moses H. Cone Memorial Park, Blowing Rock, NC" },
+            {
+              "name": "Moses H. Cone Memorial Park",
+              "mapQuery": "Moses H. Cone Memorial Park, Blowing Rock, NC"
+            },
             { "name": "Price Lake", "mapQuery": "Price Lake, Blue Ridge Parkway, NC" },
             { "name": "The Blowing Rock", "mapQuery": "The Blowing Rock, Blowing Rock, NC" }
           ],
           "notes": [
-            "时间地点待定",
-            "候选：Moses H. Cone Memorial Park（MP 294）、Price Lake（MP 297）、The Blowing Rock"
+            "Finn 他们大概 16:00 到",
+            "下雨就约在 Blowing Rock 镇上的咖啡店见面",
+            "不下雨：Price Lake 环湖步道约 4 km 平路，或 Moses H. Cone 庄园"
           ],
           "status": "tbd"
+        },
+        {
+          "time": "约 18:00",
+          "title": "晚饭：6 个人一起",
+          "who": "all",
+          "notes": ["周六晚上餐厅人多，提前订位", "在 Blowing Rock 或 Boone 吃，看 Finn 他们住哪"],
+          "status": "tbd"
+        },
+        {
+          "type": "drive",
+          "time": "约 20:00",
+          "title": "回 Rivendell（约 20 分钟）",
+          "who": ["nnez", "pp", "photic"],
+          "notes": ["下雨、天黑，路滑慢开"]
         },
         {
           "time": "晚上",
@@ -213,56 +330,73 @@
     },
     {
       "date": "2026-10-11",
-      "title": "Blue Ridge 上午 → Asheville",
+      "title": "Boone → Asheville",
+      "summary": "天气：Boone 全天下雨；Asheville 14:00 前有阵雨和雷雨，之后转小，最高约 22°C。中午跟 Finn 他们分开，photic. 坐 Finn 的车回 Durham。",
+      "bring": ["雨衣、伞", "所有行李（退房）"],
+      "notes": ["11:00 前退房，出门前检查充电线和床边", "雨天不走 Parkway，也不走弯多的 US-221：走 US-321 下山到 Hickory，再上 I-40 西"],
       "items": [
         {
-          "time": "11:00 前",
+          "time": "09:30 前",
           "title": "Rivendell 退房",
           "who": ["nnez", "pp", "photic"],
+          "notes": ["11:00 前退房就行，早点出门跟 Finn 他们会合", "行李全部装车；photic. 的行李之后换到 Finn 的车上"],
           "status": "planned"
         },
         {
-          "time": "上午",
-          "title": "跟 Finn 他们在 Blue Ridge 再玩半天",
+          "time": "约 09:30–11:30",
+          "title": "跟 Finn 他们一起：下雨就吃早午饭",
           "who": "all",
-          "notes": ["去哪群里定"],
+          "notes": ["下雨的话山上什么都看不到，改成一起吃 brunch", "雨停的话再去近处走走", "去哪群里定"],
           "status": "tbd"
         },
         {
-          "time": "中午",
-          "title": "跟 Finn 他们分开，开车去 Asheville",
+          "type": "drive",
+          "time": "约 11:30–13:45",
+          "title": "分开：NNez、pp 开车去 Asheville（约 2 小时 15 分）",
           "who": ["nnez", "pp"],
-          "place": { "name": "Asheville, NC" },
-          "notes": ["photic. 换到 Finn 的车，跟他们回 Durham", "约 2 小时", "走 US-221 和 I-40，不走 Parkway：Blowing Rock 往南有路段封闭"],
-          "links": [{ "label": "Parkway 路况", "url": "https://www.nps.gov/blri/planyourvisit/roadclosures.htm" }],
-          "status": "planned"
-        },
-        {
-          "time": "下午和晚上",
-          "title": "Asheville 市中心、River Arts District 上半区",
-          "who": ["nnez", "pp"],
-          "place": [
-            { "name": "Downtown Asheville", "mapQuery": "Pack Square Park, Asheville, NC" },
-            { "name": "River Arts District", "mapQuery": "River Arts District, Asheville, NC" }
+          "notes": [
+            "photic. 换到 Finn 的车，跟他们回 Durham",
+            "US-321 南 → Hickory → I-40 西",
+            "Parkway 去 Asheville 方向 MP 344–355 关闭"
           ],
-          "links": [{ "label": "Asheville 开放情况", "url": "https://www.exploreasheville.com/" }],
+          "place": { "name": "Asheville, NC" },
+          "links": [{"label": "Parkway 路况", "url": "https://www.nps.gov/blri/planyourvisit/roadclosures.htm"}]
+        },
+        {
+          "time": "约 11:30",
+          "title": "回 Durham",
+          "who": ["finn", "finn-friend", "finn-pal", "photic"],
+          "notes": ["photic. 搭 Finn 的车一起回，周一在家开会"],
           "status": "planned"
         },
         {
-          "title": "住宿：The Residences at Biltmore（Asheville，两卧公寓）",
+          "time": "约 14:00–16:00",
+          "title": "River Arts District",
+          "who": ["nnez", "pp"],
+          "place": { "name": "River Arts District", "mapQuery": "River Arts District, Asheville, NC" },
+          "notes": ["各工作室自己定时间，周日大多 11:00–16:00 或 12:00–17:00", "主要在室内，雨天正合适", "上半区（Upper RAD）已全面重开，靠河的下半区部分恢复"],
+          "status": "planned"
+        },
+        {
+          "time": "16:00",
+          "title": "入住：The Residences at Biltmore（两卧公寓）",
           "who": ["nnez", "pp"],
           "place": { "name": "The Residences at Biltmore", "mapQuery": "The Residences at Biltmore, Asheville, NC" },
           "notes": [
             "公寓式酒店：先去前台登记，要出示证件",
             "保证 16:00 入住，有空房可以提前；楼下免费停车",
+            "公寓有洗衣机和烘干机，可以洗一轮",
             "在 Biltmore Village 旁边，周一上 I-40 很近"
           ],
           "status": "confirmed"
         },
         {
-          "title": "回 Durham",
-          "who": ["finn", "finn-friend", "finn-pal", "photic"],
-          "notes": ["photic. 搭 Finn 的车一起回，周一在家开会"],
+          "time": "约 17:30 起",
+          "title": "Asheville 市中心：晚饭、逛街",
+          "who": ["nnez", "pp"],
+          "place": { "name": "Downtown Asheville", "mapQuery": "Pack Square Park, Asheville, NC" },
+          "notes": ["Pack Square 一带", "雨停就走走；还在下就找室内的书店、餐厅"],
+          "links": [{"label": "Asheville 开放情况", "url": "https://www.exploreasheville.com/"}],
           "status": "planned"
         }
       ]
@@ -270,6 +404,9 @@
     {
       "date": "2026-10-12",
       "title": "Asheville → Durham → 飞走",
+      "summary": "天气：Asheville 晴；Durham 早上可能有小阵雨，之后晴，最高约 26°C。15:45 必须从 Durham 出发去 RDU。",
+      "bring": ["短袖（Durham 26°C）", "所有行李和充电线（退房）"],
+      "notes": ["还车前在机场附近加满油", "RDU 还车后坐接驳车到航站楼，约 15–20 分钟；Southwest 在 Terminal 1"],
       "items": [
         {
           "time": "一早",
@@ -279,30 +416,43 @@
           "status": "planned"
         },
         {
-          "time": "约 08:00 ET",
-          "title": "从 Asheville 出发去 Durham",
+          "type": "drive",
+          "time": "08:00–11:30",
+          "title": "从 Asheville 开到 Durham（约 3.5 小时）",
           "who": ["nnez", "pp"],
-          "notes": ["I-40 东行约 3.5 小时"],
+          "notes": ["I-40 东行", "中途在 Hickory 或 Statesville 一带歇一下"]
+        },
+        {
+          "time": "11:30–12:30",
+          "title": "午饭：Duke 附近",
+          "who": ["nnez", "pp", "finn"],
+          "notes": ["Ninth Street 一带离 Duke 近，餐厅多"],
           "status": "planned"
         },
         {
-          "time": "约 11:30 ET",
+          "time": "12:30–15:30",
           "title": "Finn 带着逛 Duke",
           "who": ["nnez", "pp", "finn"],
           "place": [
             { "name": "Sarah P. Duke Gardens", "mapQuery": "Sarah P. Duke Gardens, Durham, NC" },
             { "name": "Duke Chapel", "mapQuery": "Duke Chapel, Durham, NC" }
           ],
-          "notes": ["重点 Sarah P. Duke Gardens 和 Duke Chapel", "Nasher Museum 周一闭馆"],
+          "notes": [
+            "Sarah P. Duke Gardens：免费，8:00 开到天黑；快逛 1–2 小时，拍照能拍更久",
+            "Duke Gardens 停车 $2/小时，主入口在 Anderson St",
+            "Duke Chapel 10:00–20:00 开放；10/16 前在修窗户，走侧门进；进去看一圈约 15 分钟",
+            "Nasher Museum 周一闭馆"
+          ],
+          "bring": ["防晒", "墨镜"],
           "status": "planned"
         },
         {
-          "time": "15:45 ET",
-          "title": "从 Durham 出发去 RDU",
-          "who": ["nnez"],
-          "place": { "name": "RDU", "mapQuery": "Raleigh-Durham International Airport" },
-          "notes": ["16:30 前在 RDU 还车（Enterprise，1008 Rental Car Dr）"],
-          "status": "planned"
+          "type": "drive",
+          "time": "15:45–16:15",
+          "title": "从 Durham 去 RDU 还车（约 30 分钟）",
+          "who": ["nnez", "pp"],
+          "notes": ["16:30 前还车（Enterprise，1008 Rental Car Dr）", "还车前在机场附近加满油", "还完坐接驳车到 Terminal 1，约 15–20 分钟"],
+          "place": { "name": "RDU", "mapQuery": "Raleigh-Durham International Airport" }
         },
         {
           "time": "18:15 ET",
@@ -318,12 +468,7 @@
           ],
           "status": "confirmed"
         },
-        {
-          "title": "从 RDU 飞回匹兹堡",
-          "who": ["pp"],
-          "notes": ["机票 pp 自己订"],
-          "status": "tbd"
-        }
+        { "title": "从 RDU 飞回匹兹堡", "who": ["pp"], "notes": ["机票 pp 自己订"], "status": "tbd" }
       ]
     }
   ],
@@ -360,6 +505,9 @@
         "who": ["nnez"],
         "notes": [
           "NNez 开；要加第二司机就在取车时柜台加，另收费",
+          "Rivendell 房东建议开 AWD（四驱）：门口是碎石坡路，周六周日下雨",
+          "订的这一档不保证是 AWD，Enterprise 说 AWD 有车才给。取车时直接问柜台；Subaru 都是四驱，其他车看车尾有没有 AWD 标",
+          "柜台没有 AWD：就开普通的，碎石坡慢开，提前问房东下雨时车停哪",
           "不限里程，异地还车费 $0",
           "预估 $518.69（含税费），到店付；可免费取消",
           "取车时问清收费站怎么收费（I-77 Beckley 以南是 West Virginia Turnpike）",
@@ -457,6 +605,13 @@
       "mapQuery": "The Blowing Rock, Blowing Rock, NC"
     },
     {
+      "name": "Blowing Rock Art & History Museum",
+      "mapQuery": "Blowing Rock Art & History Museum, Blowing Rock, NC",
+      "hours": "周二到周六 11:00–17:00，周日 11:00–16:00，周一闭馆",
+      "notes": ["免费；旁边停车楼免费停车", "周六下雨时的备选"],
+      "link": { "label": "开放时间", "url": "https://blowingrockmuseum.org/plan" }
+    },
+    {
       "name": "Downtown Asheville",
       "mapQuery": "Pack Square Park, Asheville, NC",
       "notes": ["Pack Square 一带"]
@@ -490,6 +645,8 @@
   "tips": {
     "路况": [
       "Blowing Rock 到 Linn Cove 这段 Parkway 开放，但有施工，偶尔单车道封闭，会有短暂等待",
+      "Parkway 去 Asheville 方向 MP 344–355 关闭；周日走 US-321 → Hickory → I-40 西",
+      "下雨、起雾时不走 Parkway：看不到风景，弯道湿滑",
       "出发前看 NPS 路况页"
     ],
     "信号": [
@@ -500,9 +657,16 @@
       "今年天气偏暖，峰值推迟",
       "Blowing Rock 镇上（约 3500 英尺）那个周末可能还没红透，5000 英尺以上的高处接近峰值，所以往高处开"
     ],
-    "天气": ["山上白天约 10–18°C，早晚 2–8°C，山顶风大"],
+    "天气": [
+      "周五晴；周六上午可能有阵雨，下午之后大概率下雨、风大；周日 Boone 全天雨，Asheville 下午转小；周一晴",
+      "山上冷：Boone 白天 16–22°C，夜里约 10°C，山顶风大更冷；Durham 周一最高约 26°C，穿短袖",
+      "预报会变，每天早上再看一眼"
+    ],
     "停车": ["热门观景点和步道停车场周末上午就满，早去"],
-    "开车": ["Parkway 限速低、弯多，天黑后不要开"],
+    "开车": [
+      "Parkway 限速低、弯多，天黑后不要开",
+      "Rivendell 门口是碎石坡路：下雨慢开，最好是 AWD"
+    ],
     "费用": ["住宿、租车、油费按人头平摊；photic. 加入后怎么分还在商量，定了再更新"],
     "Rivendell 入住须知": [
       "16:00 后入住，11:00 前退房",
@@ -513,6 +677,7 @@
   },
 
   "openQuestions": [
+    { "text": "PIT 取车时问柜台要 AWD；没有就问 Rivendell 房东下雨时车停哪", "owner": "nnez", "due": "10/8 取车时" },
     { "text": "周六和 Finn 在哪、几点汇合；Finn 能不能提早出发", "owner": "群聊" },
     { "text": "周日上午去哪、中午几点分开", "owner": "群聊" },
     { "text": "Finn 他们订周六一晚的 Airbnb（3 人）", "owner": "finn" },
