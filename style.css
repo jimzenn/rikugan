@@ -118,8 +118,9 @@ h1 { font-size: 26px; line-height: 1.3; }
   text-decoration: none;
 }
 .chip small { font-size: 12px; font-weight: 400; color: var(--muted); }
-.chip.today { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
-.chip.today small { color: inherit; }
+.chip.today { border: 2px solid var(--accent); color: var(--accent); }
+.chip.active { background: var(--text); border-color: var(--text); color: var(--bg); }
+.chip.active small { color: inherit; opacity: .8; }
 .chip.has-tbd::after {
   content: "";
   position: absolute;
@@ -199,6 +200,13 @@ main { padding-bottom: 24px; }
   text-decoration: none;
 }
 .place::before { content: "📍"; margin-right: 4px; }
+.bring { margin-top: 6px; font-size: 14px; color: var(--muted); }
+.bring::before { content: "🎒 "; }
+
+.row.drive { padding-top: 8px; padding-bottom: 8px; background: var(--bg); }
+.row.drive h3 { font-size: 15px; font-weight: 600; color: var(--muted); }
+.row.drive h3::before { content: "🚗 "; }
+.row.drive .notes { font-size: 14px; color: var(--muted); }
 .ext::after { content: " ↗"; }
 
 /* ---- days ---- */
@@ -208,6 +216,12 @@ main { padding-bottom: 24px; }
 .day-head { padding: 14px 16px 12px; border-bottom: 1px solid var(--line); }
 .day-date { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); }
 .day h2 { margin-top: 2px; font-size: 21px; line-height: 1.35; }
+.day-brief { padding: 12px 16px; border-bottom: 1px solid var(--line); background: var(--accent-soft); font-size: 15px; }
+.day-brief .bring { color: var(--text); }
+.day-nav { display: flex; justify-content: space-between; padding: 4px 16px; border-top: 1px solid var(--line); }
+.day-nav a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; text-decoration: none; }
+.info-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; }
+[hidden] { display: none !important; }
 .today-tag {
   padding: 0 8px;
   border-radius: 999px;

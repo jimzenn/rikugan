@@ -74,19 +74,23 @@ function save(key, value) {
 const badge = s => h('span', { class: 'badge ' + statusOf(s) }, STATUS[statusOf(s)][0]);
 const notes = n => list(n).length > 0 && h('ul', { class: 'notes' }, list(n).map(t => h('li', {}, t)));
 
-// Day items and booking entries share this shape.
+const isDrive = it => it.type === 'drive';
+const bring = (label, b) => list(b).length > 0 && h('p', { class: 'bring' }, label + list(b).join('、'));
+
+// Day items and booking entries share this shape. Drive legs are compact: no status, no people.
 function renderItem(it) {
-  const s = statusOf(it.status);
-  const who = list(it.who);
+  const s = isDrive(it) ? 'drive' : statusOf(it.status);
+  const who = isDrive(it) ? [] : list(it.who);
   const buttons = [
     ...list(it.place).map(p => extLink(mapUrl(p), 'btn place', p.name)),
     ...linksOf(it).map(l => extLink(l.url, 'btn ext', l.label)),
   ];
   return h('li', { class: 'row ' + s },
-    h('div', { class: 'row-head' }, h('span', { class: 'time' }, it.time), badge(s)),
+    h('div', { class: 'row-head' }, h('span', { class: 'time' }, it.time), !isDrive(it) && badge(s)),
     h('h3', {}, it.title),
     who.length > 0 && h('div', { class: 'who' }, who.map(id => h('span', { class: 'pill' }, nameOf(id)))),
     notes(it.notes),
+    bring('带上：', it.bring),
     buttons.length > 0 && h('div', { class: 'btns' }, buttons));
 }
 
@@ -101,26 +105,36 @@ function renderHeader(trip, counts) {
   ];
 }
 
-function renderChips(days, today, sections) {
+const hasTbd = d => list(d.items).some(it => !isDrive(it) && statusOf(it.status) === 'tbd');
+const dayLabel = d => `${weekday(d.date)} ${shortDate(d.date)}`;
+
+function renderChips(days, today) {
   return [
     days.map(d => h('a', {
-      href: '#day-' + d.date,
-      class: 'chip' + (d.date === today ? ' today' : '') +
-        (list(d.items).some(it => statusOf(it.status) === 'tbd') ? ' has-tbd' : ''),
+      href: '#' + d.date,
+      'data-view': d.date,
+      class: 'chip' + (d.date === today ? ' today' : '') + (hasTbd(d) ? ' has-tbd' : ''),
     }, h('small', {}, weekday(d.date)), shortDate(d.date))),
     h('span', { class: 'chip-sep', 'aria-hidden': 'true' }),
-    sections.map(([key, title]) => h('a', { href: '#' + key, class: 'chip sec' }, title)),
+    h('a', { href: '#info', 'data-view': 'info', class: 'chip sec' }, '信息'),
   ];
 }
 
-function renderDay(day, i, today) {
+// One page per day: a short brief (summary, what to bring, what to know), the agenda, then prev/next.
+function renderDay(day, i, days, today) {
   const isToday = day.date === today;
-  return h('section', { class: 'box day' + (isToday ? ' today' : ''), id: 'day-' + day.date },
+  const prev = days[i - 1], next = days[i + 1];
+  const brief = [day.summary && h('p', {}, day.summary), bring('今天带上：', day.bring), notes(day.notes)];
+  return h('section', { class: 'box day' + (isToday ? ' today' : ''), id: 'day-' + day.date, 'data-view': day.date },
     h('header', { class: 'day-head' },
       h('p', { class: 'day-date' }, `第 ${i + 1} 天 · ${shortDate(day.date)} ${weekday(day.date)}`,
         isToday && h('span', { class: 'today-tag' }, '今天')),
       h('h2', {}, day.title)),
-    h('ol', { class: 'rows' }, list(day.items).map(it => renderItem(it))));
+    clean(brief).length > 0 && h('div', { class: 'day-brief' }, brief),
+    h('ol', { class: 'rows' }, list(day.items).map(it => renderItem(it))),
+    h('nav', { class: 'day-nav' },
+      prev ? h('a', { href: '#' + prev.date }, '← ' + dayLabel(prev)) : h('span'),
+      next ? h('a', { href: '#' + next.date }, dayLabel(next) + ' →') : h('a', { href: '#info' }, '信息 →')));
 }
 
 // ---- sections after the days ----
@@ -226,21 +240,39 @@ function render(data) {
   people = Object.fromEntries(list(data.people).map(p => [p.id, p]));
 
   const counts = { confirmed: 0, planned: 0, tbd: 0 };
-  days.forEach(d => list(d.items).forEach(it => counts[statusOf(it.status)]++));
+  days.forEach(d => list(d.items).forEach(it => { if (!isDrive(it)) counts[statusOf(it.status)]++; }));
   const sections = SECTIONS.filter(([key]) => !isEmpty(data[key]));
 
   document.title = trip.title || '行程';
   fill('top', renderHeader(trip, counts));
-  fill('chips', renderChips(days, today, sections));
+  fill('chips', renderChips(days, today));
   fill('main',
-    days.map((d, i) => renderDay(d, i, today)),
-    sections.map(([key, title, fn]) => h('section', { class: 'section', id: key }, h('h2', {}, title), fn(data[key]))));
+    days.map((d, i) => renderDay(d, i, days, today)),
+    h('div', { 'data-view': 'info' },
+      h('nav', { class: 'info-nav' }, sections.map(([key, title]) => h('a', { href: '#' + key, class: 'btn' }, title))),
+      sections.map(([key, title, fn]) => h('section', { class: 'section', id: key }, h('h2', {}, title), fn(data[key])))));
 
-  // Jump to the linked day/section, otherwise to today's card while the trip is on.
-  const target = document.getElementById(location.hash.slice(1)) || document.getElementById('day-' + today);
-  if (target) target.scrollIntoView();
-  const chip = document.querySelector('.chip.today');
-  if (chip) chip.parentNode.scrollLeft = chip.offsetLeft - 16; // horizontal only; keeps the page where it is
+  const show = first => showView(days.map(d => d.date), today, first);
+  addEventListener('hashchange', () => show(false));
+  show(true);
+}
+
+// #2026-10-10 shows that day, #info the info page, #bookings etc. a section inside it.
+// Without a hash: today's page during the trip, otherwise the first day.
+function showView(dates, today, first) {
+  const hash = location.hash.slice(1).replace(/^day-/, '');
+  const info = document.querySelector('#main [data-view="info"]');
+  const section = hash && hash !== 'info' && !dates.includes(hash) ? info.querySelector('#' + CSS.escape(hash)) : null;
+  const view = dates.includes(hash) || hash === 'info' ? hash
+    : section ? 'info' : dates.includes(today) ? today : dates[0];
+
+  document.querySelectorAll('#main [data-view]').forEach(el => { el.hidden = el.dataset.view !== view; });
+  document.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', c.dataset.view === view));
+  const chip = document.querySelector('.chip.active');
+  if (chip) chip.parentNode.scrollLeft = chip.offsetLeft - 16; // horizontal only
+
+  if (section) section.scrollIntoView();
+  else if (!first || hash || view === today) document.getElementById('main').scrollIntoView();
 }
 
 async function loadTrip() {
