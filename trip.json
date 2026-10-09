@@ -53,7 +53,7 @@
       "bring": ["驾照（REAL ID）", "本人名下信用卡（取车押金）", "充电宝放随身行李"],
       "notes": [
         "没有托运行李，11:45 前到 SFO 就够",
-        "取车时问能不能换 AWD（四驱）：Rivendell 房东建议，周六周日下雨",
+        "车换成了 Jeep Grand Cherokee（四驱），Rivendell 房东建议的 AWD 有了",
         "拿到车马上把车的品牌、颜色、车牌发给 Airbnb 房东：停车场要登记，不登记会被拖车"
       ],
       "items": [
@@ -78,7 +78,7 @@
           "place": { "name": "PIT", "mapQuery": "Pittsburgh International Airport" },
           "notes": [
             "Enterprise 柜台在航站楼下层，行李提取处对面，营业到凌晨 1:00",
-            "问柜台要 AWD 的车：订的这一档不保证四驱，有车才给；Subaru 都是四驱，其他车看车尾 AWD 标",
+            "订的中型 SUV 没车，换成了 Jeep Grand Cherokee（四驱）",
             "航班晚点很多的话，先打电话给 PIT 的 Enterprise 柜台（号码在确认邮件里）",
             "开走前绕车一圈录视频：划痕、油量、里程",
             "拍一张车尾车牌，连同品牌、颜色发给 Airbnb 房东（订单在 pp 账号上就让 pp 转发）"
@@ -193,7 +193,7 @@
           "title": "到 Boone，入住 Rivendell",
           "who": ["nnez", "pp"],
           "place": { "name": "Boone, NC" },
-          "notes": ["门口是碎石小路，带手电", "房东建议用 AWD；不是四驱的话坡上慢开，或者问房东停哪"],
+          "notes": ["门口是碎石小路，带手电", "车是四驱，坡上照样慢开"],
           "status": "planned"
         },
         {
@@ -514,13 +514,11 @@
     "car": [
       {
         "time": "10/8 周四 23:00 PIT 取车 → 10/12 周一 16:30 RDU 还车",
-        "title": "Enterprise 中型 SUV（Nissan Rogue 或同级）",
+        "title": "Enterprise：Jeep Grand Cherokee（取车时换的）",
         "who": ["nnez"],
         "notes": [
           "NNez 开；要加第二司机就在取车时柜台加，另收费",
-          "Rivendell 房东建议开 AWD（四驱）：门口是碎石坡路，周六周日下雨",
-          "订的这一档不保证是 AWD，Enterprise 说 AWD 有车才给。取车时直接问柜台；Subaru 都是四驱，其他车看车尾有没有 AWD 标",
-          "柜台没有 AWD：就开普通的，碎石坡慢开，提前问房东下雨时车停哪",
+          "订的是中型 SUV，柜台没有这一档，换成了 Jeep Grand Cherokee，四驱，Rivendell 的碎石坡没问题",
           "不限里程，异地还车费 $0",
           "预估 $518.69（含税费），到店付；可免费取消",
           "取车时问清收费站怎么收费（I-77 Beckley 以南是 West Virginia Turnpike）",
@@ -569,7 +567,7 @@
 
   "costs": [
     {
-      "title": "租车（Enterprise 中型 SUV，4 天）",
+      "title": "租车（Enterprise，4 天）",
       "amount": 518.69,
       "paidBy": "nnez",
       "status": "confirmed",
@@ -689,7 +687,7 @@
     "停车": ["热门观景点和步道停车场周末上午就满，早去"],
     "开车": [
       "Parkway 限速低、弯多，天黑后不要开",
-      "Rivendell 门口是碎石坡路：下雨慢开，最好是 AWD"
+      "Rivendell 门口是碎石坡路：下雨慢开"
     ],
     "费用": ["住宿、租车、油费按人头平摊；photic. 加入后怎么分还在商量，定了再更新"],
     "Shadyside Airbnb 入住须知": [
@@ -710,7 +708,6 @@
   },
 
   "openQuestions": [
-    { "text": "PIT 取车时问柜台要 AWD；没有就问 Rivendell 房东下雨时车停哪", "owner": "nnez", "due": "10/8 取车时" },
     { "text": "把车的品牌、颜色、车牌发给 Shadyside 的 Airbnb 房东，登记停车", "owner": "nnez", "due": "10/8 取车后" },
     { "text": "周六和 Finn 在哪、几点汇合；Finn 能不能提早出发", "owner": "群聊" },
     { "text": "周日上午去哪、中午几点分开", "owner": "群聊" },
