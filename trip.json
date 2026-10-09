@@ -193,7 +193,7 @@
           "title": "到 Boone，入住 Rivendell",
           "who": ["nnez", "pp"],
           "place": { "name": "Boone, NC" },
-          "notes": ["门口是碎石小路，带手电", "车是四驱，坡上照样慢开"],
+          "notes": ["地址和 WiFi 在 Airbnb App 的订单页里，不写在网站上", "门口是碎石小路，带手电", "车是四驱，坡上照样慢开"],
           "status": "planned"
         },
         {
@@ -394,10 +394,14 @@
           "time": "16:00",
           "title": "入住：The Residences at Biltmore（两卧公寓）",
           "who": ["nnez", "pp"],
-          "place": { "name": "The Residences at Biltmore", "mapQuery": "The Residences at Biltmore, Asheville, NC" },
+          "place": {
+            "name": "The Residences at Biltmore（700 Biltmore Ave）",
+            "mapQuery": "700 Biltmore Ave, Asheville, NC 28803"
+          },
           "notes": [
             "公寓式酒店：先去前台登记，要出示证件",
             "保证 16:00 入住，有空房可以提前；楼下免费停车",
+            "周一 11:00 前退房",
             "公寓有洗衣机和烘干机，可以洗一轮",
             "在 Biltmore Village 旁边，周一上 I-40 很近"
           ],
@@ -431,9 +435,9 @@
         {
           "type": "drive",
           "time": "08:00–11:30",
-          "title": "从 Asheville 开到 Durham（约 3.5 小时）",
+          "title": "退房，从 Asheville 开到 Durham（约 3.5 小时）",
           "who": ["nnez", "pp"],
-          "notes": ["I-40 东行", "中途在 Hickory 或 Statesville 一带歇一下"]
+          "notes": ["出发前退房，前台还钥匙（如果有）", "I-40 东行", "中途在 Hickory 或 Statesville 一带歇一下"]
         },
         {
           "time": "11:30–12:30",
@@ -546,6 +550,7 @@
         "notes": [
           "订单 4 人，实际住 NNez、pp、photic. 三人；两晚 $671.99（含税），已付，不可退款",
           "16:00 后入住，11:00 前退房，键盘锁自助入住",
+          "地址和 WiFi 在 Airbnb App 的订单页里，不写在网站上",
           "入住须知见「注意事项」",
           "确认码在 Airbnb 里，不写在网站上"
         ],
@@ -555,9 +560,10 @@
         "time": "10/11，一晚",
         "title": "The Residences at Biltmore（Asheville，两卧公寓，Airbnb）",
         "who": ["nnez", "pp"],
+        "place": { "name": "700 Biltmore Ave", "mapQuery": "700 Biltmore Ave, Asheville, NC 28803" },
         "notes": [
           "2 人，$233.91（含税），已付；10/10 前可免费取消",
-          "保证 16:00 入住，先到前台登记、出示证件",
+          "10/11 16:00 入住，10/12 11:00 前退房；先到前台登记、出示证件",
           "确认码在 Airbnb 里，不写在网站上"
         ],
         "status": "confirmed"
