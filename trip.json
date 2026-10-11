@@ -4,7 +4,7 @@
     "subtitle": "匹兹堡 → Boone / Blue Ridge Parkway → Durham",
     "startDate": "2026-10-08",
     "endDate": "2026-10-12",
-    "lastUpdated": "2026-10-11 12:25"
+    "lastUpdated": "2026-10-11 17:00"
   },
 
   "people": [
@@ -254,14 +254,9 @@
     {
       "date": "2026-10-11",
       "title": "Blue Ridge Parkway → Durham",
-      "summary": "12:17 更新：Rough Ridge 一带的山洪警告已经解除，山上云底约 950 米，能看到远景。窗口大概到 13:30–14:00，之后又会有阵雨。Boone、Blowing Rock 还有 Flood Advisory（低洼处积水）到 16:00。",
-      "bring": ["雨衣", "防滑鞋", "所有行李（已退房）"],
-      "notes": [
-        "Linville Falls 支路被 NPS 因天气封闭，今天不去",
-        "去 Rough Ridge 走 Parkway，不走 US-221（贴着山坡、过溪多）",
-        "到了停车场已经起雾，就拍几张照直接走",
-        "路上看到水漫过路面，不管多浅都掉头"
-      ],
+      "summary": "山洪警告中午解除，下午爬上了 Rough Ridge 山顶。约 17:15 从 Blowing Rock 出发去 Durham，路上没有天气预警，路上吃晚饭，21:00 左右到。",
+      "bring": ["所有行李（已退房）"],
+      "notes": ["19:00 天黑；下山那段 US-321 趁天亮开完", "Linville Falls 支路被 NPS 因天气封闭，这次没去"],
       "items": [
         {
           "time": "11:00",
@@ -277,54 +272,49 @@
           "status": "confirmed"
         },
         {
-          "type": "drive",
-          "time": "12:45–13:30",
-          "title": "去 Rough Ridge（约 40–45 分钟）",
-          "who": ["nnez", "pp", "photic"],
-          "notes": ["Boone → US-321 → Blowing Rock → MP 292 上 Parkway 往南 → MP 302.8"]
-        },
-        {
-          "time": "13:30–14:15",
-          "title": "Rough Ridge 木栈道",
+          "time": "下午",
+          "title": "Rough Ridge：爬到了山顶",
           "who": ["nnez", "pp", "photic"],
           "place": { "name": "Rough Ridge Trail", "mapQuery": "Rough Ridge Trail, Blue Ridge Parkway, NC" },
-          "notes": ["走到木栈道约 500 米，单程 15–20 分钟", "雨后石头很滑，只走到木栈道，不上山顶"],
-          "bring": ["防滑鞋", "雨衣"],
-          "status": "planned"
-        },
-        {
-          "time": "约 14:15",
-          "title": "Linn Cove Viaduct",
-          "who": ["nnez", "pp", "photic"],
-          "place": { "name": "Linn Cove Viaduct", "mapQuery": "Linn Cove Viaduct, Blue Ridge Parkway, NC" },
-          "notes": ["MP 304.4，回程顺路停一下拍照；游客中心关闭"],
-          "status": "planned"
+          "status": "confirmed"
         },
         {
           "type": "drive",
-          "time": "14:15–18:00",
-          "title": "去 Durham（约 3.5 小时）",
+          "time": "约 17:15–21:00",
+          "title": "Blowing Rock → Durham（约 3 小时 20 分，加上晚饭）",
           "who": ["nnez", "pp", "photic"],
           "notes": [
-            "Parkway 回 Blowing Rock，然后让 Google Maps 选快的：",
-            "US-321 南 → Hickory → I-40 东（Hickory 基本放晴，Caldwell 的山洪警告已解除）",
-            "或者 US-421 东 → Winston-Salem → I-40 东（Deep Gap 一带 Flood Advisory 到 16:00）",
-            "不走 US-221 南下 Marion"
+            "US-321 南 → Hickory → I-40 东，或 US-421 东 → Winston-Salem → I-40 东，让导航选",
+            "约 19:00 在 Winston-Salem 或 Greensboro 一带吃晚饭"
           ]
         },
         {
-          "time": "约 18:00",
-          "title": "到 Durham：送 photic. 回家，吃晚饭，入住",
+          "time": "约 21:00",
+          "title": "到 Durham：送 photic. 回家",
           "who": ["nnez", "pp", "photic"],
-          "notes": ["NNez、pp 周日晚上住哪还没订"],
-          "status": "tbd"
+          "status": "planned"
+        },
+        {
+          "time": "约 21:15",
+          "title": "入住 Walltown 的 Airbnb（NNez、pp）",
+          "who": ["nnez", "pp"],
+          "place": { "name": "1004 Onslow St, Unit A", "mapQuery": "1004 Onslow Street, Durham, NC 27705" },
+          "notes": [
+            "两卧的老房子，走路就到 Duke 和 Ninth Street",
+            "停在房子前面：入口在左边；停在后面车道（从小巷进）：沿房子右侧走到前面，上台阶",
+            "门框上黑色密码面板：输入密码再按红色按钮；或者用 August Home App 蓝牙开门",
+            "门锁密码房东到之前会另发消息，不写在网站上",
+            "走的时候单按红色按钮锁门",
+            "室内禁烟"
+          ],
+          "status": "confirmed"
         }
       ]
     },
     {
       "date": "2026-10-12",
       "title": "Durham → 飞走",
-      "summary": "天晴，Durham 最高约 26°C。不用赶路，上午自己逛，中午跟 Finn 吃饭、逛 Duke。15:45 必须出发去 RDU。",
+      "summary": "天晴，Durham 最高约 27°C。住的地方走路就到 Duke 和 Ninth Street。11:00 前退房，中午跟 Finn 吃饭、逛 Duke。15:45 必须出发去 RDU。",
       "bring": ["短袖", "所有行李和充电线（退房）"],
       "notes": ["还车前在机场附近加满油", "RDU 还车后坐接驳车到航站楼，约 15–20 分钟；Southwest 在 Terminal 1"],
       "items": [
@@ -333,6 +323,13 @@
           "title": "从 RDU 飞回波士顿",
           "who": ["finn-friend"],
           "place": { "name": "RDU", "mapQuery": "Raleigh-Durham International Airport" },
+          "status": "planned"
+        },
+        {
+          "time": "11:00 前",
+          "title": "Airbnb 退房",
+          "who": ["nnez", "pp"],
+          "notes": ["行李全部装车；走的时候单按红色按钮锁门", "Ninth Street 就在附近，走路能到"],
           "status": "planned"
         },
         {
@@ -454,10 +451,15 @@
       },
       {
         "time": "10/11，一晚",
-        "title": "Durham（NNez、pp）",
+        "title": "Walltown 两卧老房子（Durham，Airbnb）",
         "who": ["nnez", "pp"],
-        "notes": ["还没订；Asheville 那晚已经取消"],
-        "status": "tbd"
+        "place": { "name": "1004 Onslow St, Unit A", "mapQuery": "1004 Onslow Street, Durham, NC 27705" },
+        "notes": [
+          "16:00 后入住，10/12 11:00 前退房；密码锁自助入住",
+          "门锁密码和 WiFi 看房东消息，不写在网站上",
+          "走路就到 Duke 和 Ninth Street"
+        ],
+        "status": "confirmed"
       }
     ]
   },
@@ -497,6 +499,12 @@
       "split": ["nnez", "pp", "photic"],
       "status": "confirmed",
       "notes": ["谁先付的待补"]
+    },
+    {
+      "title": "Durham Airbnb（周日晚）",
+      "amount": null,
+      "status": "confirmed",
+      "notes": ["金额和分法待补"]
     }
   ],
 
@@ -600,7 +608,7 @@
   },
 
   "openQuestions": [
-    { "text": "订周日晚上 Durham 的住处（NNez、pp）", "owner": "nnez", "due": "10/10" },
+    { "text": "Durham Airbnb 多少钱、谁付的、怎么分", "owner": "nnez" },
     { "text": "周一几点、在哪跟 Finn 见面", "owner": "群聊" },
     { "text": "photic. 的费用怎么分（她坐车到周日的 Durham）", "owner": "群聊" }
   ],
