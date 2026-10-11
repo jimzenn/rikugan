@@ -496,6 +496,20 @@
       "paidBy": "nnez",
       "status": "confirmed",
       "notes": ["含税"]
+    },
+    {
+      "title": "超市零食（周六，共享）",
+      "amount": 31,
+      "split": ["nnez", "pp", "photic"],
+      "status": "confirmed",
+      "notes": ["谁先付的待补"]
+    },
+    {
+      "title": "晚餐（周六）",
+      "amount": 136.36,
+      "split": ["nnez", "pp", "photic"],
+      "status": "confirmed",
+      "notes": ["谁先付的待补"]
     }
   ],
 
