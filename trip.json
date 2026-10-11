@@ -4,7 +4,7 @@
     "subtitle": "匹兹堡 → Boone / Blue Ridge Parkway → Durham",
     "startDate": "2026-10-08",
     "endDate": "2026-10-12",
-    "lastUpdated": "2026-10-10"
+    "lastUpdated": "2026-10-11 08:50"
   },
 
   "people": [
@@ -254,41 +254,49 @@
     {
       "date": "2026-10-11",
       "title": "Blue Ridge Parkway → Durham",
-      "summary": "雨在中午前后停，风也小下来（阵风 15–20 mph）。下午走 Rough Ridge 和 Linville Falls，暴雨后瀑布水量最大，然后下山去 Durham，photic. 一起走。Boone 洪水监视到 20:00。",
+      "summary": "昨晚 Boone 下了 4.5–7.5 英寸雨。Grandfather Mountain / Linville 一带山洪警告到 13:00，Boone 洪水警告到 10:00。Rough Ridge 中午前后雾才散，所以晚点出门：11:00 退房，12:30 上 Parkway，14:00 下山去 Durham。",
       "bring": ["雨衣", "防滑鞋", "所有行李（退房）"],
       "notes": [
-        "9:30 先看 NPS 路况页（Parkway 有没有因倒树封路）和 DriveNC.gov；路线上有 Flash Flood Warning 就不上山，直接去 Durham",
-        "12:30 午饭时再看一次：还在下大雨就跳过 Parkway",
-        "路上有积水绝对不开过去",
-        "19:00 天黑；下山后在 Marion 或 Morganton 吃晚饭"
+        "Linville Falls 支路被 NPS 因天气封闭，今天不去",
+        "Bamboo Rd、Deerfield Rd 被淹不能走；也别走 NC-105（Foscoe 附近过河的路被淹）",
+        "去 Rough Ridge 走 Parkway，不走 US-221（贴着山坡、过溪多）",
+        "12:30 再看一次：山洪警告延长了、或者山上雾大，就跳过 Parkway 直接去 Durham",
+        "路上看到水漫过路面，不管多浅都掉头"
       ],
       "items": [
         {
-          "time": "11:00 前",
-          "title": "Rivendell 退房",
+          "time": "11:00",
+          "title": "Rivendell 退房出发",
           "who": ["nnez", "pp", "photic"],
-          "notes": ["三个人的行李都装车，photic. 一起回 Durham", "出门前检查充电线和床边"],
+          "notes": ["三个人的行李都装车，photic. 一起回 Durham", "出门前检查充电线和床边", "穿过 Boone 走 US-321 去 Blowing Rock"],
           "status": "planned"
         },
         {
-          "time": "11:30–12:45",
+          "time": "11:30–12:30",
           "title": "午饭：Blowing Rock",
           "who": ["nnez", "pp", "photic"],
           "place": { "name": "Blowing Rock, NC", "mapQuery": "Main Street, Blowing Rock, NC" },
-          "notes": ["上厕所：Linville Falls 没有厕所", "看天气和路况，定下午走不走 Parkway"],
+          "notes": ["上厕所", "看一眼 NWS 预警和 NPS 路况，定下午走不走 Parkway"],
           "status": "planned"
         },
         {
-          "time": "13:00–14:00",
+          "type": "drive",
+          "time": "12:30–12:55",
+          "title": "Blowing Rock 上 Parkway 往南到 Rough Ridge（约 25 分钟）",
+          "who": ["nnez", "pp", "photic"],
+          "notes": ["MP 292 上 Parkway；这段开放，有施工时会单车道"]
+        },
+        {
+          "time": "13:00–13:45",
           "title": "Rough Ridge 木栈道",
           "who": ["nnez", "pp", "photic"],
           "place": { "name": "Rough Ridge Trail", "mapQuery": "Rough Ridge Trail, Blue Ridge Parkway, NC" },
-          "notes": ["MP 302.8；走到木栈道约 500 米，单程 15–20 分钟", "开头陡、石头多，雨后很滑；不上山顶", "雾大看不到就跳过"],
+          "notes": ["MP 302.8；走到木栈道约 500 米，单程 15–20 分钟", "雨后石头很滑，只走到木栈道，不上山顶", "雾大看不到就跳过"],
           "bring": ["防滑鞋", "雨衣"],
           "status": "planned"
         },
         {
-          "time": "14:05",
+          "time": "13:50",
           "title": "Linn Cove Viaduct",
           "who": ["nnez", "pp", "photic"],
           "place": { "name": "Linn Cove Viaduct", "mapQuery": "Linn Cove Viaduct, Blue Ridge Parkway, NC" },
@@ -297,37 +305,18 @@
         },
         {
           "type": "drive",
-          "time": "14:20–14:45",
-          "title": "沿 Parkway 往南开到 Linville Falls（约 25 分钟）",
-          "who": ["nnez", "pp", "photic"],
-          "notes": ["MP 316.5 转支路，约 2.4 km"]
-        },
-        {
-          "time": "14:45–16:00",
-          "title": "Linville Falls：Erwin's View 步道",
-          "who": ["nnez", "pp", "photic"],
-          "place": { "name": "Linville Falls", "mapQuery": "Linville Falls Trailhead, Blue Ridge Parkway, NC" },
-          "notes": [
-            "来回约 2.5 km，从上面看上下两层瀑布和峡谷；暴雨后水量最大",
-            "只走观景步道，待在栏杆后面；不走下到河边的 Plunge Basin 步道",
-            "游客中心、野餐区、营地还关着（Helene 之后），没有厕所",
-            "步道有倒树或被冲坏就掉头"
-          ],
-          "status": "planned"
-        },
-        {
-          "type": "drive",
-          "time": "16:00–19:30",
-          "title": "下山去 Durham（约 3 小时 20 分）",
+          "time": "约 14:00–17:30",
+          "title": "去 Durham（约 3.5 小时）",
           "who": ["nnez", "pp", "photic"],
           "notes": [
-            "US-221 南 → Marion → I-40 东；出发前在 DriveNC 确认 US-221 开着，不通就回 Blowing Rock 走 US-321",
-            "17:00 左右在 Marion 或 Morganton 吃晚饭"
+            "Parkway 回 Blowing Rock → US-321 → Boone → US-421 东 → Winston-Salem → I-40 东",
+            "不走 US-221 南下 Marion，那边在涨水",
+            "出发前看 DriveNC.gov"
           ]
         },
         {
-          "time": "约 20:00",
-          "title": "到 Durham：送 photic. 回家，入住",
+          "time": "约 17:30–18:00",
+          "title": "到 Durham：送 photic. 回家，吃晚饭，入住",
           "who": ["nnez", "pp", "photic"],
           "notes": ["NNez、pp 周日晚上住哪还没订"],
           "status": "tbd"
@@ -530,12 +519,6 @@
       "notes": ["Blue Ridge Parkway MP 304.4", "游客中心目前关闭，步道和停车场正常"]
     },
     {
-      "name": "Linville Falls",
-      "mapQuery": "Linville Falls Trailhead, Blue Ridge Parkway, NC",
-      "notes": ["Blue Ridge Parkway MP 316.5 转支路", "Erwin's View 等观景步道开放；游客中心、营地、野餐区还关着，没有厕所"],
-      "link": { "label": "Parkway 路况", "url": "https://www.nps.gov/blri/planyourvisit/roadclosures.htm" }
-    },
-    {
       "name": "Moses H. Cone Memorial Park",
       "mapQuery": "Moses H. Cone Memorial Park, Blowing Rock, NC",
       "notes": ["Blue Ridge Parkway MP 294"]
@@ -576,14 +559,14 @@
     "路况": [
       "Blowing Rock 到 Linn Cove 这段 Parkway 开放，但有施工，偶尔单车道封闭，会有短暂等待",
       "暴雨后 Parkway 可能因倒树临时封路，周日出发前看 NPS 路况页",
-      "周日下山走 US-221 南 → Marion → I-40 东；不通就回 Blowing Rock 走 US-321，出发前看 DriveNC",
+      "周日去 Durham 走 US-421 东 → Winston-Salem → I-40 东；不走 US-221 南下 Marion，出发前看 DriveNC",
       "路上有积水绝对不开过去",
       "下雨、起雾时不走 Parkway：看不到风景，弯道湿滑",
       "出发前看 NPS 路况页"
     ],
     "信号": [
       "Parkway 上很多地方没信号",
-      "出发前下载 Google Maps 离线地图：Blue Ridge Parkway 一带、Linville Falls、Durham"
+      "出发前下载 Google Maps 离线地图：Blue Ridge Parkway 一带、Durham"
     ],
     "红叶": [
       "今年天气偏暖，峰值推迟",
