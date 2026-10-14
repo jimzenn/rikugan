@@ -4,7 +4,7 @@
     "subtitle": "匹兹堡 → Boone / Blue Ridge Parkway → Durham",
     "startDate": "2026-10-08",
     "endDate": "2026-10-13",
-    "lastUpdated": "2026-10-13 23:44"
+    "lastUpdated": "2026-10-13 23:46"
   },
 
   "people": [
@@ -462,7 +462,7 @@
           "NNez 开；要加第二司机就在取车时柜台加，另收费",
           "订的是中型 SUV，柜台没有这一档，换成了 Jeep Grand Cherokee，四驱，Rivendell 的碎石坡没问题",
           "不限里程，异地还车费 $0",
-          "预估 $518.69（含税费），到店付；可免费取消",
+          "共 $518.69（含税费），还车时付",
           "取车时问清收费站怎么收费（I-77 Beckley 以南是 West Virginia Turnpike）",
           "确认码在邮件里，不写在网站上"
         ],
@@ -519,11 +519,20 @@
 
   "costs": [
     {
-      "title": "租车（Enterprise，4 天）",
-      "amount": 518.69,
+      "title": "租车：周五、周一（Enterprise 4 天里的 2 天）",
+      "amount": 259.35,
       "paidBy": "nnez",
+      "split": ["nnez", "pp"],
       "status": "confirmed",
-      "notes": ["预估价，含税费，还车时付；加司机或保险会变"]
+      "notes": ["4 天共 $518.69（含税费），按天平摊，每天约 $129.67", "这两天 photic. 没坐车，NNez、pp 两人分"]
+    },
+    {
+      "title": "租车：周六、周日（Enterprise 4 天里的 2 天）",
+      "amount": 259.34,
+      "paidBy": "nnez",
+      "split": ["nnez", "pp", "photic"],
+      "status": "confirmed",
+      "notes": ["photic. 这两天一起坐车，三人分"]
     },
     {
       "title": "油费：Sheetz",
@@ -536,15 +545,16 @@
       "title": "Rivendell（周五、周六两晚）",
       "amount": 671.99,
       "paidBy": "nnez",
+      "split": ["nnez", "pp", "photic"],
       "status": "confirmed",
       "notes": ["含税"]
     },
     {
       "title": "超市零食（周六，共享）",
       "amount": 31,
+      "paidBy": "nnez",
       "split": ["nnez", "pp", "photic"],
-      "status": "confirmed",
-      "notes": ["谁先付的待补"]
+      "status": "confirmed"
     },
     {
       "title": "咖啡两杯（周六）",
@@ -571,8 +581,10 @@
     {
       "title": "Durham Airbnb（周日晚）",
       "amount": null,
+      "paidBy": "pp",
+      "split": ["nnez", "pp"],
       "status": "confirmed",
-      "notes": ["金额和分法待补"]
+      "notes": ["金额待补", "按 NNez、pp 两人住算"]
     }
   ],
 
@@ -676,9 +688,8 @@
   },
 
   "openQuestions": [
-    { "text": "Durham Airbnb 多少钱、谁付的、怎么分", "owner": "nnez" },
-    { "text": "除了 Sheetz 那次，还有没有别的加油记录（查信用卡）", "owner": "nnez" },
-    { "text": "photic. 的费用怎么分（她坐车到周日的 Durham）", "owner": "群聊" }
+    { "text": "Durham Airbnb 多少钱（pp 付的）", "owner": "pp" },
+    { "text": "除了 Sheetz 那次，还有没有别的加油记录（查信用卡）", "owner": "nnez" }
   ],
 
   "packing": [
