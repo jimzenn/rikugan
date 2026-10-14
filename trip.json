@@ -4,7 +4,7 @@
     "subtitle": "匹兹堡 → Boone / Blue Ridge Parkway → Durham",
     "startDate": "2026-10-08",
     "endDate": "2026-10-13",
-    "lastUpdated": "2026-10-13 23:48"
+    "lastUpdated": "2026-10-14 10:11"
   },
 
   "people": [
@@ -535,6 +535,14 @@
       "notes": ["photic. 这两天一起坐车，三人分"]
     },
     {
+      "title": "油费：Ingles（周五，West Jefferson）",
+      "amount": 71.97,
+      "paidBy": "nnez",
+      "split": ["nnez", "pp"],
+      "status": "confirmed",
+      "notes": ["这时 photic. 还没上车，NNez、pp 两人分"]
+    },
+    {
       "title": "油费：Sheetz",
       "amount": 14.41,
       "paidBy": "nnez",
@@ -587,11 +595,11 @@
     },
     {
       "title": "Durham Airbnb（周日晚）",
-      "amount": null,
+      "amount": 170.25,
       "paidBy": "pp",
       "split": ["nnez", "pp"],
       "status": "confirmed",
-      "notes": ["金额待补", "按 NNez、pp 两人住算"]
+      "notes": ["$150 一晚 + 税 $20.25", "按 NNez、pp 两人住算"]
     }
   ],
 
@@ -694,10 +702,7 @@
     ]
   },
 
-  "openQuestions": [
-    { "text": "Durham Airbnb 多少钱（pp 付的）", "owner": "pp" },
-    { "text": "除了 Sheetz 那次，还有没有别的加油记录（查信用卡）", "owner": "nnez" }
-  ],
+  "openQuestions": [],
 
   "packing": [
     "防风外套、雨衣、保暖中间层",
