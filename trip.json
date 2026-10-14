@@ -3,8 +3,8 @@
     "title": "北卡秋叶之旅",
     "subtitle": "匹兹堡 → Boone / Blue Ridge Parkway → Durham",
     "startDate": "2026-10-08",
-    "endDate": "2026-10-12",
-    "lastUpdated": "2026-10-11 17:00"
+    "endDate": "2026-10-13",
+    "lastUpdated": "2026-10-13 23:50"
   },
 
   "people": [
@@ -12,13 +12,13 @@
       "id": "nnez",
       "name": "NNez",
       "from": "旧金山",
-      "summary": "周四飞到匹兹堡，周一从 RDU 飞回；全程主要司机"
+      "summary": "周四飞到匹兹堡，周二从 RDU 飞回（周一航班延误改签）；全程主要司机"
     },
     {
       "id": "pp",
       "name": "pp",
       "from": "匹兹堡",
-      "summary": "匹兹堡出发，全程同行；周一从 RDU 飞回匹兹堡"
+      "summary": "匹兹堡出发，全程同行；周一晚上跟 Finn 飞 Orlando"
     },
     {
       "id": "photic",
@@ -30,7 +30,7 @@
       "id": "finn",
       "name": "Finn",
       "from": "Durham",
-      "summary": "Duke 学生；因为天气取消了上山；周一在 Durham 带大家逛 Duke"
+      "summary": "Duke 学生；因为天气取消了上山；周一在 Durham 带大家逛 Duke，晚上跟 pp 飞 Orlando"
     },
     {
       "id": "finn-friend",
@@ -314,7 +314,7 @@
     {
       "date": "2026-10-12",
       "title": "Durham → 飞走",
-      "summary": "天晴，Durham 最高约 27°C。住的地方走路就到 Duke 和 Ninth Street。11:00 前退房，中午跟 Finn 吃饭、逛 Duke。15:45 必须出发去 RDU。",
+      "summary": "天晴，Durham 最高约 27°C。11:00 前退房，中午跟 Finn 吃饭、逛 Duke，下午去 RDU 还车。晚上 NNez 的航班一路延误、赶不上 Denver 转机，改签到周二早上，住机场旁的酒店；pp 跟 Finn 飞 Orlando。",
       "bring": ["短袖", "所有行李和充电线（退房）"],
       "notes": ["还车前在机场附近加满油", "RDU 还车后坐接驳车到航站楼，约 15–20 分钟；Southwest 在 Terminal 1"],
       "items": [
@@ -365,20 +365,64 @@
           "place": { "name": "RDU", "mapQuery": "Raleigh-Durham International Airport" }
         },
         {
-          "time": "18:15 ET",
-          "title": "NNez 的航班：RDU → SFO",
+          "time": "18:15 ET → 延误",
+          "title": "NNez 的航班延误，改签到周二早上",
           "who": ["nnez"],
           "place": { "name": "RDU", "mapQuery": "Raleigh-Durham International Airport" },
           "notes": [
-            "WN 3562：18:15 ET 从 RDU 起飞，20:05 MT 到 Denver (DEN)",
-            "DEN 转机 1 小时 30 分",
-            "WN 2036：21:35 MT 从 DEN 起飞，23:15 PT 到 SFO",
-            "Basic 票，票价 $268.84（不含税费）；座位值机时才分配，周日 18:15 ET 一到就值机",
-            "确认码在 Southwest App 和邮件里，不写在网站上"
+            "WN 3562 一路延误到 21:20 以后，Denver 转机肯定赶不上",
+            "Southwest 说是天气原因，不管住宿；没退票，改签到周二 WN 473 + WN 4931（见周二）",
+            "原票：Basic，$268.84（不含税费）"
           ],
           "status": "confirmed"
         },
-        { "title": "从 RDU 飞回匹兹堡", "who": ["pp"], "notes": ["机票 pp 自己订"], "status": "tbd" }
+        {
+          "time": "晚上",
+          "title": "NNez 住机场旁的酒店",
+          "who": ["nnez"],
+          "place": {
+            "name": "Tru by Hilton Raleigh Durham Airport",
+            "mapQuery": "Tru by Hilton Raleigh Durham Airport, 350 Airgate Dr, Morrisville, NC"
+          },
+          "notes": ["在 super.com 临时订的", "酒店有免费接驳车，按需叫，到航站楼约 5 分钟"],
+          "status": "confirmed"
+        },
+        {
+          "time": "晚上",
+          "title": "pp 跟 Finn 飞 Orlando（之后的行程不在这里）",
+          "who": ["pp", "finn"],
+          "notes": ["Breeze MX 1404 在 RDU 取消（RDU 设备故障，进港航班大面积延误）", "改从 Greensboro (GSO) 起飞"],
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "title": "RDU → 回家",
+      "summary": "NNez 一早从 RDU 飞，经 St. Louis 转机，上午到 SFO。4:30 起床，坐酒店接驳车去机场。",
+      "items": [
+        {
+          "type": "drive",
+          "time": "4:50–5:00",
+          "title": "坐酒店接驳车去 RDU（约 5 分钟）",
+          "who": ["nnez"],
+          "notes": ["头天晚上跟前台约好"],
+          "place": { "name": "RDU", "mapQuery": "Raleigh-Durham International Airport" }
+        },
+        {
+          "time": "6:20 ET",
+          "title": "NNez 的航班：RDU → SFO（经 St. Louis）",
+          "who": ["nnez"],
+          "place": { "name": "RDU", "mapQuery": "Raleigh-Durham International Airport" },
+          "notes": [
+            "WN 473：6:20 ET 从 RDU 起飞，7:30 CT 到 St. Louis (STL)",
+            "STL 转机 1 小时",
+            "WN 4931：8:30 CT 从 STL 起飞，10:50 PT 到 SFO",
+            "Southwest 自动改签的",
+            "确认码在 Southwest App 和邮件里，不写在网站上"
+          ],
+          "status": "confirmed"
+        }
       ]
     }
   ],
@@ -397,11 +441,12 @@
         "status": "confirmed"
       },
       {
-        "time": "10/12 周一 18:15 ET → 23:15 PT",
-        "title": "NNez 的航班：RDU → SFO（Southwest WN 3562 + WN 2036）",
+        "time": "10/13 周二 6:20 ET → 10:50 PT（原定 10/12 周一 18:15）",
+        "title": "NNez 的航班：RDU → SFO（Southwest WN 473 + WN 4931）",
         "who": ["nnez"],
         "notes": [
-          "经 Denver (DEN) 转机 1 小时 30 分：20:05 MT 到，21:35 MT 起飞",
+          "原定周一 WN 3562 + WN 2036 经 Denver；一路延误、赶不上转机，Southwest 自动改签到周二早上",
+          "经 St. Louis (STL) 转机 1 小时：7:30 CT 到，8:30 CT 起飞",
           "Basic 票，票价 $268.84（不含税费）",
           "确认码在 Southwest App 和邮件里，不写在网站上"
         ],
@@ -460,6 +505,14 @@
           "走路就到 Duke 和 Ninth Street"
         ],
         "status": "confirmed"
+      },
+      {
+        "time": "10/12，一晚",
+        "title": "Tru by Hilton Raleigh Durham Airport（NNez，航班延误临时订）",
+        "who": ["nnez"],
+        "place": { "name": "Tru by Hilton Raleigh Durham Airport", "mapQuery": "Tru by Hilton Raleigh Durham Airport, 350 Airgate Dr, Morrisville, NC" },
+        "notes": ["在 super.com 订的", "免费接驳车按需叫，到航站楼约 5 分钟"],
+        "status": "confirmed"
       }
     ]
   },
@@ -494,11 +547,19 @@
       "notes": ["谁先付的待补"]
     },
     {
-      "title": "晚餐（周六）",
+      "title": "晚餐（周六，Boone）",
       "amount": 136.36,
+      "paidBy": "photic",
+      "split": ["nnez", "pp", "photic"],
+      "status": "confirmed"
+    },
+    {
+      "title": "晚餐（周日，Durham 的 Taberna Tapas）",
+      "amount": 168,
+      "paidBy": "pp",
       "split": ["nnez", "pp", "photic"],
       "status": "confirmed",
-      "notes": ["谁先付的待补"]
+      "notes": ["账单 $144.23，加小费合计 $168"]
     },
     {
       "title": "Durham Airbnb（周日晚）",
@@ -609,7 +670,6 @@
 
   "openQuestions": [
     { "text": "Durham Airbnb 多少钱、谁付的、怎么分", "owner": "nnez" },
-    { "text": "周一几点、在哪跟 Finn 见面", "owner": "群聊" },
     { "text": "photic. 的费用怎么分（她坐车到周日的 Durham）", "owner": "群聊" }
   ],
 
