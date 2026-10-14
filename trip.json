@@ -4,7 +4,7 @@
     "subtitle": "匹兹堡 → Boone / Blue Ridge Parkway → Durham",
     "startDate": "2026-10-08",
     "endDate": "2026-10-13",
-    "lastUpdated": "2026-10-13 23:46"
+    "lastUpdated": "2026-10-13 23:48"
   },
 
   "people": [
@@ -564,8 +564,15 @@
       "status": "confirmed"
     },
     {
-      "title": "晚餐（周六，Boone）",
+      "title": "晚餐（周六，Blowing Rock 的 Twigs）",
       "amount": 136.36,
+      "paidBy": "photic",
+      "split": ["nnez", "pp", "photic"],
+      "status": "confirmed"
+    },
+    {
+      "title": "啤酒（Publix）",
+      "amount": 16.96,
       "paidBy": "photic",
       "split": ["nnez", "pp", "photic"],
       "status": "confirmed"
