@@ -4,7 +4,7 @@
     "subtitle": "匹兹堡 → Boone / Blue Ridge Parkway → Durham",
     "startDate": "2026-10-08",
     "endDate": "2026-10-13",
-    "lastUpdated": "2026-10-13 23:50"
+    "lastUpdated": "2026-10-13 23:55"
   },
 
   "people": [
@@ -545,6 +545,13 @@
       "split": ["nnez", "pp", "photic"],
       "status": "confirmed",
       "notes": ["谁先付的待补"]
+    },
+    {
+      "title": "咖啡两杯（周六）",
+      "amount": 13.56,
+      "paidBy": "photic",
+      "split": ["nnez", "photic"],
+      "status": "confirmed"
     },
     {
       "title": "晚餐（周六，Boone）",
